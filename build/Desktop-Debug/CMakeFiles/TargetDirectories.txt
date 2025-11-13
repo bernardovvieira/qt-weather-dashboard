@@ -1,0 +1,9 @@
+/mnt/c/Users/be500/Documents/GitHub/qt-weather-dashboard/build/Desktop-Debug/CMakeFiles/qt-weather-dashboard.dir
+/mnt/c/Users/be500/Documents/GitHub/qt-weather-dashboard/build/Desktop-Debug/CMakeFiles/edit_cache.dir
+/mnt/c/Users/be500/Documents/GitHub/qt-weather-dashboard/build/Desktop-Debug/CMakeFiles/rebuild_cache.dir
+/mnt/c/Users/be500/Documents/GitHub/qt-weather-dashboard/build/Desktop-Debug/CMakeFiles/list_install_components.dir
+/mnt/c/Users/be500/Documents/GitHub/qt-weather-dashboard/build/Desktop-Debug/CMakeFiles/install.dir
+/mnt/c/Users/be500/Documents/GitHub/qt-weather-dashboard/build/Desktop-Debug/CMakeFiles/install/local.dir
+/mnt/c/Users/be500/Documents/GitHub/qt-weather-dashboard/build/Desktop-Debug/CMakeFiles/install/strip.dir
+/mnt/c/Users/be500/Documents/GitHub/qt-weather-dashboard/build/Desktop-Debug/CMakeFiles/qt-weather-dashboard_autogen_timestamp_deps.dir
+/mnt/c/Users/be500/Documents/GitHub/qt-weather-dashboard/build/Desktop-Debug/CMakeFiles/qt-weather-dashboard_autogen.dir

@@ -1,0 +1,4 @@
+# Hashes of file build rules.
+4975de34db6a851f3690fdbb52887e26 CMakeFiles/qt-weather-dashboard_autogen
+4975de34db6a851f3690fdbb52887e26 CMakeFiles/qt-weather-dashboard_autogen_timestamp_deps
+4bc32b115b6837036d2260fd79ebcebc qt-weather-dashboard_autogen/timestamp
