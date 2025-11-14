@@ -2,6 +2,14 @@
 #define MAINWINDOW_H
 
 #include <QMainWindow>
+#include <QNetworkAccessManager>
+#include <QNetworkReply>
+#include <QPixmap>
+#include "weatherservice.h"
+#include "locationmanager.h"
+#include "weatherdata.h"
+#include "forecastdata.h"
+#include "citysearchwidget.h"
 
 QT_BEGIN_NAMESPACE
 namespace Ui {
@@ -17,7 +25,34 @@ public:
     MainWindow(QWidget *parent = nullptr);
     ~MainWindow();
 
+private slots:
+    void onCitySelected(const QString &cityName, double lat, double lon);
+    void onWeatherDataReady(const WeatherData &data);
+    void onForecastDataReady(const ForecastData &data);
+    void onWeatherError(const QString &error);
+    void onAddFavoritesClicked();
+    void onLoadFavoriteClicked();
+    void onRemoveFavoriteClicked();
+    void onFavoritesChanged();
+    void onIconDownloaded(QNetworkReply *reply);
+    void onClearClicked();
+
 private:
     Ui::MainWindow *ui;
+    WeatherService *m_weatherService;
+    LocationManager *m_locationManager;
+    QNetworkAccessManager *m_iconManager;
+    CitySearchWidget *m_citySearchWidget;
+    WeatherData m_currentWeather;
+    QString m_currentCity;
+
+    void updateWeatherDisplay(const WeatherData &data);
+    void updateForecastDisplay(const ForecastData &data);
+    void updateFavoritesList();
+    void setStatusMessage(const QString &message);
+    void downloadWeatherIcon(const QString &iconCode);
+    void clearResults();
+    void loadFirstFavorite();  // ADICIONAR
 };
+
 #endif // MAINWINDOW_H

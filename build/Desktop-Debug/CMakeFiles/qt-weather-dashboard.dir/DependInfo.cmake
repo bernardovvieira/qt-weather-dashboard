@@ -9,6 +9,8 @@ set(CMAKE_DEPENDS_LANGUAGES
 # The set of dependency files which are needed:
 set(CMAKE_DEPENDS_DEPENDENCY_FILES
   "" "qt-weather-dashboard_autogen/timestamp" "custom" "qt-weather-dashboard_autogen/deps"
+  "/mnt/c/Users/be500/Documents/GitHub/qt-weather-dashboard/citysearchwidget.cpp" "CMakeFiles/qt-weather-dashboard.dir/citysearchwidget.cpp.o" "gcc" "CMakeFiles/qt-weather-dashboard.dir/citysearchwidget.cpp.o.d"
+  "/mnt/c/Users/be500/Documents/GitHub/qt-weather-dashboard/forecastdata.cpp" "CMakeFiles/qt-weather-dashboard.dir/forecastdata.cpp.o" "gcc" "CMakeFiles/qt-weather-dashboard.dir/forecastdata.cpp.o.d"
   "/mnt/c/Users/be500/Documents/GitHub/qt-weather-dashboard/locationmanager.cpp" "CMakeFiles/qt-weather-dashboard.dir/locationmanager.cpp.o" "gcc" "CMakeFiles/qt-weather-dashboard.dir/locationmanager.cpp.o.d"
   "/mnt/c/Users/be500/Documents/GitHub/qt-weather-dashboard/main.cpp" "CMakeFiles/qt-weather-dashboard.dir/main.cpp.o" "gcc" "CMakeFiles/qt-weather-dashboard.dir/main.cpp.o.d"
   "/mnt/c/Users/be500/Documents/GitHub/qt-weather-dashboard/mainwindow.cpp" "CMakeFiles/qt-weather-dashboard.dir/mainwindow.cpp.o" "gcc" "CMakeFiles/qt-weather-dashboard.dir/mainwindow.cpp.o.d"

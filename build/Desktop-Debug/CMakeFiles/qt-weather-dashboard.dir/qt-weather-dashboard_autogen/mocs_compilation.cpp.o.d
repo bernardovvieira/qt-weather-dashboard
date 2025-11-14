@@ -1,6 +1,6 @@
 CMakeFiles/qt-weather-dashboard.dir/qt-weather-dashboard_autogen/mocs_compilation.cpp.o: \
   /mnt/c/Users/be500/Documents/GitHub/qt-weather-dashboard/build/Desktop-Debug/qt-weather-dashboard_autogen/mocs_compilation.cpp \
-  /mnt/c/Users/be500/Documents/GitHub/qt-weather-dashboard/build/Desktop-Debug/qt-weather-dashboard_autogen/EWIEGA46WW/moc_locationmanager.cpp \
+  /mnt/c/Users/be500/Documents/GitHub/qt-weather-dashboard/build/Desktop-Debug/qt-weather-dashboard_autogen/EWIEGA46WW/moc_citysearchwidget.cpp \
   /usr/bin/../lib/gcc/x86_64-linux-gnu/13/../../../../include/c++/13/memory \
   /usr/bin/../lib/gcc/x86_64-linux-gnu/13/../../../../include/c++/13/bits/memoryfwd.h \
   /usr/bin/../lib/gcc/x86_64-linux-gnu/13/../../../../include/x86_64-linux-gnu/c++/13/bits/c++config.h \
@@ -135,11 +135,11 @@ CMakeFiles/qt-weather-dashboard.dir/qt-weather-dashboard_autogen/mocs_compilatio
   /usr/bin/../lib/gcc/x86_64-linux-gnu/13/../../../../include/c++/13/backward/auto_ptr.h \
   /usr/bin/../lib/gcc/x86_64-linux-gnu/13/../../../../include/c++/13/pstl/glue_memory_defs.h \
   /usr/bin/../lib/gcc/x86_64-linux-gnu/13/../../../../include/c++/13/pstl/execution_defs.h \
-  /mnt/c/Users/be500/Documents/GitHub/qt-weather-dashboard/build/Desktop-Debug/qt-weather-dashboard_autogen/EWIEGA46WW/../../../../locationmanager.h \
-  /usr/include/x86_64-linux-gnu/qt6/QtCore/QObject \
-  /usr/include/x86_64-linux-gnu/qt6/QtCore/qobject.h \
-  /usr/include/x86_64-linux-gnu/qt6/QtCore/qobjectdefs.h \
-  /usr/include/x86_64-linux-gnu/qt6/QtCore/qnamespace.h \
+  /mnt/c/Users/be500/Documents/GitHub/qt-weather-dashboard/build/Desktop-Debug/qt-weather-dashboard_autogen/EWIEGA46WW/../../../../citysearchwidget.h \
+  /usr/include/x86_64-linux-gnu/qt6/QtWidgets/QWidget \
+  /usr/include/x86_64-linux-gnu/qt6/QtWidgets/qwidget.h \
+  /usr/include/x86_64-linux-gnu/qt6/QtWidgets/qtwidgetsglobal.h \
+  /usr/include/x86_64-linux-gnu/qt6/QtGui/qtguiglobal.h \
   /usr/include/x86_64-linux-gnu/qt6/QtCore/qglobal.h \
   /usr/bin/../lib/gcc/x86_64-linux-gnu/13/../../../../include/c++/13/cstddef \
   /usr/bin/../lib/gcc/x86_64-linux-gnu/13/../../../../include/c++/13/utility \
@@ -209,8 +209,16 @@ CMakeFiles/qt-weather-dashboard.dir/qt-weather-dashboard_autogen/mocs_compilatio
   /usr/bin/../lib/gcc/x86_64-linux-gnu/13/../../../../include/c++/13/tr1/riemann_zeta.tcc \
   /usr/include/x86_64-linux-gnu/qt6/QtCore/qversiontagging.h \
   /usr/include/x86_64-linux-gnu/qt6/QtCore/qforeach.h \
+  /usr/include/x86_64-linux-gnu/qt6/QtGui/qtgui-config.h \
+  /usr/include/x86_64-linux-gnu/qt6/QtGui/qtguiexports.h \
+  /usr/include/x86_64-linux-gnu/qt6/QtWidgets/qtwidgets-config.h \
+  /usr/include/x86_64-linux-gnu/qt6/QtWidgets/qtwidgetsexports.h \
+  /usr/include/x86_64-linux-gnu/qt6/QtGui/qwindowdefs.h \
+  /usr/include/x86_64-linux-gnu/qt6/QtCore/qobjectdefs.h \
+  /usr/include/x86_64-linux-gnu/qt6/QtCore/qnamespace.h \
   /usr/include/x86_64-linux-gnu/qt6/QtCore/qtmetamacros.h \
   /usr/include/x86_64-linux-gnu/qt6/QtCore/qobjectdefs_impl.h \
+  /usr/include/x86_64-linux-gnu/qt6/QtCore/qobject.h \
   /usr/include/x86_64-linux-gnu/qt6/QtCore/qstring.h \
   /usr/include/x86_64-linux-gnu/qt6/QtCore/qchar.h \
   /usr/bin/../lib/gcc/x86_64-linux-gnu/13/../../../../include/c++/13/functional \
@@ -333,19 +341,6 @@ CMakeFiles/qt-weather-dashboard.dir/qt-weather-dashboard_autogen/mocs_compilatio
   /usr/bin/../lib/gcc/x86_64-linux-gnu/13/../../../../include/c++/13/bits/chrono.h \
   /usr/bin/../lib/gcc/x86_64-linux-gnu/13/../../../../include/c++/13/ratio \
   /usr/bin/../lib/gcc/x86_64-linux-gnu/13/../../../../include/c++/13/ctime \
-  /usr/include/x86_64-linux-gnu/qt6/QtCore/QStringList \
-  /mnt/c/Users/be500/Documents/GitHub/qt-weather-dashboard/build/Desktop-Debug/qt-weather-dashboard_autogen/EWIEGA46WW/moc_mainwindow.cpp \
-  /mnt/c/Users/be500/Documents/GitHub/qt-weather-dashboard/build/Desktop-Debug/qt-weather-dashboard_autogen/EWIEGA46WW/../../../../mainwindow.h \
-  /usr/include/x86_64-linux-gnu/qt6/QtWidgets/QMainWindow \
-  /usr/include/x86_64-linux-gnu/qt6/QtWidgets/qmainwindow.h \
-  /usr/include/x86_64-linux-gnu/qt6/QtWidgets/qtwidgetsglobal.h \
-  /usr/include/x86_64-linux-gnu/qt6/QtGui/qtguiglobal.h \
-  /usr/include/x86_64-linux-gnu/qt6/QtGui/qtgui-config.h \
-  /usr/include/x86_64-linux-gnu/qt6/QtGui/qtguiexports.h \
-  /usr/include/x86_64-linux-gnu/qt6/QtWidgets/qtwidgets-config.h \
-  /usr/include/x86_64-linux-gnu/qt6/QtWidgets/qtwidgetsexports.h \
-  /usr/include/x86_64-linux-gnu/qt6/QtWidgets/qwidget.h \
-  /usr/include/x86_64-linux-gnu/qt6/QtGui/qwindowdefs.h \
   /usr/include/x86_64-linux-gnu/qt6/QtCore/qmargins.h \
   /usr/include/x86_64-linux-gnu/qt6/QtGui/qaction.h \
   /usr/include/x86_64-linux-gnu/qt6/QtGui/qkeysequence.h \
@@ -392,9 +387,39 @@ CMakeFiles/qt-weather-dashboard.dir/qt-weather-dashboard_autogen/mocs_compilatio
   /usr/include/x86_64-linux-gnu/qt6/QtWidgets/qsizepolicy.h \
   /usr/include/x86_64-linux-gnu/qt6/QtGui/qcursor.h \
   /usr/include/x86_64-linux-gnu/qt6/QtGui/qbitmap.h \
+  /usr/include/x86_64-linux-gnu/qt6/QtWidgets/QLineEdit \
+  /usr/include/x86_64-linux-gnu/qt6/QtWidgets/qlineedit.h \
+  /usr/include/x86_64-linux-gnu/qt6/QtWidgets/qframe.h \
+  /usr/include/x86_64-linux-gnu/qt6/QtGui/qtextcursor.h \
+  /usr/include/x86_64-linux-gnu/qt6/QtGui/qtextdocument.h \
+  /usr/include/x86_64-linux-gnu/qt6/QtCore/qurl.h \
+  /usr/include/x86_64-linux-gnu/qt6/QtGui/qtextformat.h \
+  /usr/include/x86_64-linux-gnu/qt6/QtGui/qpen.h \
+  /usr/include/x86_64-linux-gnu/qt6/QtGui/qtextoption.h \
+  /usr/include/x86_64-linux-gnu/qt6/QtWidgets/QListWidget \
+  /usr/include/x86_64-linux-gnu/qt6/QtWidgets/qlistwidget.h \
+  /usr/include/x86_64-linux-gnu/qt6/QtWidgets/qlistview.h \
+  /usr/include/x86_64-linux-gnu/qt6/QtWidgets/qabstractitemview.h \
+  /usr/include/x86_64-linux-gnu/qt6/QtWidgets/qabstractscrollarea.h \
+  /usr/include/x86_64-linux-gnu/qt6/QtCore/qabstractitemmodel.h \
+  /usr/include/x86_64-linux-gnu/qt6/QtCore/qitemselectionmodel.h \
+  /usr/include/x86_64-linux-gnu/qt6/QtWidgets/qabstractitemdelegate.h \
+  /usr/include/x86_64-linux-gnu/qt6/QtWidgets/qstyleoption.h \
+  /usr/include/x86_64-linux-gnu/qt6/QtCore/qlocale.h \
+  /usr/include/x86_64-linux-gnu/qt6/QtWidgets/qabstractspinbox.h \
+  /usr/include/x86_64-linux-gnu/qt6/QtGui/qvalidator.h \
+  /usr/include/x86_64-linux-gnu/qt6/QtCore/qregularexpression.h \
+  /usr/include/x86_64-linux-gnu/qt6/QtWidgets/qslider.h \
+  /usr/include/x86_64-linux-gnu/qt6/QtWidgets/qabstractslider.h \
+  /usr/include/x86_64-linux-gnu/qt6/QtWidgets/qstyle.h \
+  /usr/include/x86_64-linux-gnu/qt6/QtWidgets/qtabbar.h \
   /usr/include/x86_64-linux-gnu/qt6/QtWidgets/qtabwidget.h \
-  /mnt/c/Users/be500/Documents/GitHub/qt-weather-dashboard/build/Desktop-Debug/qt-weather-dashboard_autogen/EWIEGA46WW/moc_weatherservice.cpp \
-  /mnt/c/Users/be500/Documents/GitHub/qt-weather-dashboard/build/Desktop-Debug/qt-weather-dashboard_autogen/EWIEGA46WW/../../../../weatherservice.h \
+  /usr/include/x86_64-linux-gnu/qt6/QtWidgets/qrubberband.h \
+  /usr/include/x86_64-linux-gnu/qt6/QtWidgets/QVBoxLayout \
+  /usr/include/x86_64-linux-gnu/qt6/QtWidgets/qboxlayout.h \
+  /usr/include/x86_64-linux-gnu/qt6/QtWidgets/qlayout.h \
+  /usr/include/x86_64-linux-gnu/qt6/QtWidgets/qlayoutitem.h \
+  /usr/include/x86_64-linux-gnu/qt6/QtWidgets/qgridlayout.h \
   /usr/include/x86_64-linux-gnu/qt6/QtNetwork/QNetworkAccessManager \
   /usr/include/x86_64-linux-gnu/qt6/QtNetwork/qnetworkaccessmanager.h \
   /usr/include/x86_64-linux-gnu/qt6/QtNetwork/qtnetworkglobal.h \
@@ -404,9 +429,9 @@ CMakeFiles/qt-weather-dashboard.dir/qt-weather-dashboard_autogen/mocs_compilatio
   /usr/include/x86_64-linux-gnu/qt6/QtCore/QSharedDataPointer \
   /usr/include/x86_64-linux-gnu/qt6/QtCore/QString \
   /usr/include/x86_64-linux-gnu/qt6/QtCore/QUrl \
-  /usr/include/x86_64-linux-gnu/qt6/QtCore/qurl.h \
   /usr/include/x86_64-linux-gnu/qt6/QtCore/QVariant \
   /usr/include/x86_64-linux-gnu/qt6/QtCore/QList \
+  /usr/include/x86_64-linux-gnu/qt6/QtCore/QObject \
   /usr/include/x86_64-linux-gnu/qt6/QtNetwork/QSslConfiguration \
   /usr/include/x86_64-linux-gnu/qt6/QtNetwork/qsslconfiguration.h \
   /usr/include/x86_64-linux-gnu/qt6/QtNetwork/qsslsocket.h \
@@ -419,7 +444,6 @@ CMakeFiles/qt-weather-dashboard.dir/qt-weather-dashboard_autogen/mocs_compilatio
   /usr/include/x86_64-linux-gnu/qt6/QtCore/qcryptographichash.h \
   /usr/include/x86_64-linux-gnu/qt6/QtCore/qdatetime.h \
   /usr/include/x86_64-linux-gnu/qt6/QtCore/qcalendar.h \
-  /usr/include/x86_64-linux-gnu/qt6/QtCore/qlocale.h \
   /usr/include/x86_64-linux-gnu/qt6/QtNetwork/qssl.h \
   /usr/include/x86_64-linux-gnu/qt6/QtCore/QFlags \
   /usr/include/x86_64-linux-gnu/qt6/QtNetwork/QSslPreSharedKeyAuthenticator \
@@ -429,5 +453,20 @@ CMakeFiles/qt-weather-dashboard.dir/qt-weather-dashboard_autogen/mocs_compilatio
   /usr/include/x86_64-linux-gnu/qt6/QtNetwork/qnetworkreply.h \
   /usr/include/x86_64-linux-gnu/qt6/QtCore/QIODevice \
   /usr/include/x86_64-linux-gnu/qt6/QtNetwork/QNetworkRequest \
+  /usr/include/x86_64-linux-gnu/qt6/QtCore/QTimer \
+  /usr/include/x86_64-linux-gnu/qt6/QtCore/qtimer.h \
+  /usr/include/x86_64-linux-gnu/qt6/QtCore/qbasictimer.h \
+  /usr/include/x86_64-linux-gnu/qt6/QtNetwork/QSslError \
+  /mnt/c/Users/be500/Documents/GitHub/qt-weather-dashboard/build/Desktop-Debug/qt-weather-dashboard_autogen/EWIEGA46WW/moc_locationmanager.cpp \
+  /mnt/c/Users/be500/Documents/GitHub/qt-weather-dashboard/build/Desktop-Debug/qt-weather-dashboard_autogen/EWIEGA46WW/../../../../locationmanager.h \
+  /usr/include/x86_64-linux-gnu/qt6/QtCore/QStringList \
+  /mnt/c/Users/be500/Documents/GitHub/qt-weather-dashboard/build/Desktop-Debug/qt-weather-dashboard_autogen/EWIEGA46WW/moc_mainwindow.cpp \
+  /mnt/c/Users/be500/Documents/GitHub/qt-weather-dashboard/build/Desktop-Debug/qt-weather-dashboard_autogen/EWIEGA46WW/../../../../mainwindow.h \
+  /usr/include/x86_64-linux-gnu/qt6/QtWidgets/QMainWindow \
+  /usr/include/x86_64-linux-gnu/qt6/QtWidgets/qmainwindow.h \
+  /usr/include/x86_64-linux-gnu/qt6/QtGui/QPixmap \
+  /mnt/c/Users/be500/Documents/GitHub/qt-weather-dashboard/build/Desktop-Debug/qt-weather-dashboard_autogen/EWIEGA46WW/../../../../weatherservice.h \
   /mnt/c/Users/be500/Documents/GitHub/qt-weather-dashboard/build/Desktop-Debug/qt-weather-dashboard_autogen/EWIEGA46WW/../../../../weatherdata.h \
-  /usr/include/x86_64-linux-gnu/qt6/QtNetwork/QSslError
+  /mnt/c/Users/be500/Documents/GitHub/qt-weather-dashboard/build/Desktop-Debug/qt-weather-dashboard_autogen/EWIEGA46WW/../../../../forecastdata.h \
+  /usr/include/x86_64-linux-gnu/qt6/QtCore/QDateTime \
+  /mnt/c/Users/be500/Documents/GitHub/qt-weather-dashboard/build/Desktop-Debug/qt-weather-dashboard_autogen/EWIEGA46WW/moc_weatherservice.cpp

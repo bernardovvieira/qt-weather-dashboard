@@ -218,6 +218,18 @@
 	"HEADERS" : 
 	[
 		[
+			"/mnt/c/Users/be500/Documents/GitHub/qt-weather-dashboard/citysearchwidget.h",
+			"MU",
+			"EWIEGA46WW/moc_citysearchwidget.cpp",
+			null
+		],
+		[
+			"/mnt/c/Users/be500/Documents/GitHub/qt-weather-dashboard/forecastdata.h",
+			"MU",
+			"EWIEGA46WW/moc_forecastdata.cpp",
+			null
+		],
+		[
 			"/mnt/c/Users/be500/Documents/GitHub/qt-weather-dashboard/locationmanager.h",
 			"MU",
 			"EWIEGA46WW/moc_locationmanager.cpp",
@@ -301,6 +313,16 @@
 	"SETTINGS_FILE" : "/mnt/c/Users/be500/Documents/GitHub/qt-weather-dashboard/build/Desktop-Debug/CMakeFiles/qt-weather-dashboard_autogen.dir/AutogenUsed.txt",
 	"SOURCES" : 
 	[
+		[
+			"/mnt/c/Users/be500/Documents/GitHub/qt-weather-dashboard/citysearchwidget.cpp",
+			"MU",
+			null
+		],
+		[
+			"/mnt/c/Users/be500/Documents/GitHub/qt-weather-dashboard/forecastdata.cpp",
+			"MU",
+			null
+		],
 		[
 			"/mnt/c/Users/be500/Documents/GitHub/qt-weather-dashboard/locationmanager.cpp",
 			"MU",

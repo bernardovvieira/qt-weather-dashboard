@@ -1,5 +1,6 @@
 /mnt/c/Users/be500/Documents/GitHub/qt-weather-dashboard/build/Desktop-Debug/qt-weather-dashboard_autogen/EWIEGA46WW/moc_weatherservice.cpp: /mnt/c/Users/be500/Documents/GitHub/qt-weather-dashboard/weatherservice.h \
   /mnt/c/Users/be500/Documents/GitHub/qt-weather-dashboard/build/Desktop-Debug/qt-weather-dashboard_autogen/moc_predefs.h \
+  /mnt/c/Users/be500/Documents/GitHub/qt-weather-dashboard/forecastdata.h \
   /mnt/c/Users/be500/Documents/GitHub/qt-weather-dashboard/weatherdata.h \
   /usr/include/alloca.h \
   /usr/include/asm-generic/errno-base.h \
@@ -284,6 +285,7 @@
   /usr/include/x86_64-linux-gnu/c++/13/bits/os_defines.h \
   /usr/include/x86_64-linux-gnu/gnu/stubs-64.h \
   /usr/include/x86_64-linux-gnu/gnu/stubs.h \
+  /usr/include/x86_64-linux-gnu/qt6/QtCore/QDateTime \
   /usr/include/x86_64-linux-gnu/qt6/QtCore/QFlags \
   /usr/include/x86_64-linux-gnu/qt6/QtCore/QIODevice \
   /usr/include/x86_64-linux-gnu/qt6/QtCore/QList \

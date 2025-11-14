@@ -387,6 +387,8 @@ CMakeFiles/qt-weather-dashboard.dir/weatherservice.cpp.o: \
   /usr/include/x86_64-linux-gnu/qt6/QtCore/QIODevice \
   /usr/include/x86_64-linux-gnu/qt6/QtNetwork/QNetworkRequest \
   /mnt/c/Users/be500/Documents/GitHub/qt-weather-dashboard/weatherdata.h \
+  /mnt/c/Users/be500/Documents/GitHub/qt-weather-dashboard/forecastdata.h \
+  /usr/include/x86_64-linux-gnu/qt6/QtCore/QDateTime \
   /usr/include/x86_64-linux-gnu/qt6/QtCore/QUrlQuery \
   /usr/include/x86_64-linux-gnu/qt6/QtCore/qurlquery.h \
   /usr/include/x86_64-linux-gnu/qt6/QtCore/QJsonDocument \
@@ -399,4 +401,5 @@ CMakeFiles/qt-weather-dashboard.dir/weatherservice.cpp.o: \
   /usr/include/x86_64-linux-gnu/qt6/QtCore/QJsonObject \
   /usr/include/x86_64-linux-gnu/qt6/QtCore/qjsonobject.h \
   /usr/include/x86_64-linux-gnu/qt6/QtCore/QJsonArray \
-  /usr/include/x86_64-linux-gnu/qt6/QtCore/qjsonarray.h
+  /usr/include/x86_64-linux-gnu/qt6/QtCore/qjsonarray.h \
+  /usr/include/x86_64-linux-gnu/qt6/QtCore/QDebug

@@ -26,6 +26,8 @@ if(${QT_VERSION_MAJOR} GREATER_EQUAL 6)
         weatherdata.h weatherdata.cpp
         weatherservice.h weatherservice.cpp
         locationmanager.h locationmanager.cpp
+        forecastdata.h forecastdata.cpp
+        citysearchwidget.h citysearchwidget.cpp
     )
 # Define target properties for Android with Qt 6 as:
 #    set_property(TARGET qt-weather-dashboard APPEND PROPERTY QT_ANDROID_PACKAGE_SOURCE_DIR

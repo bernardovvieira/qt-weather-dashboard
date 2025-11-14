@@ -67,10 +67,10 @@ include CMakeFiles/qt-weather-dashboard_autogen_timestamp_deps.dir/compiler_depe
 include CMakeFiles/qt-weather-dashboard_autogen_timestamp_deps.dir/progress.make
 
 CMakeFiles/qt-weather-dashboard_autogen_timestamp_deps: /usr/lib/x86_64-linux-gnu/libQt6Core.so.6.4.2
-CMakeFiles/qt-weather-dashboard_autogen_timestamp_deps: /usr/lib/x86_64-linux-gnu/libQt6Network.so.6.4.2
-CMakeFiles/qt-weather-dashboard_autogen_timestamp_deps: /usr/lib/qt6/libexec/moc
 CMakeFiles/qt-weather-dashboard_autogen_timestamp_deps: /usr/lib/qt6/libexec/uic
 CMakeFiles/qt-weather-dashboard_autogen_timestamp_deps: /usr/lib/x86_64-linux-gnu/libQt6Widgets.so.6.4.2
+CMakeFiles/qt-weather-dashboard_autogen_timestamp_deps: /usr/lib/qt6/libexec/moc
+CMakeFiles/qt-weather-dashboard_autogen_timestamp_deps: /usr/lib/x86_64-linux-gnu/libQt6Network.so.6.4.2
 
 qt-weather-dashboard_autogen_timestamp_deps: CMakeFiles/qt-weather-dashboard_autogen_timestamp_deps
 qt-weather-dashboard_autogen_timestamp_deps: CMakeFiles/qt-weather-dashboard_autogen_timestamp_deps.dir/build.make
