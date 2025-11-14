@@ -180,10 +180,11 @@ qt-weather-dashboard: CMakeFiles/qt-weather-dashboard.dir/weatherservice.cpp.o
 qt-weather-dashboard: CMakeFiles/qt-weather-dashboard.dir/locationmanager.cpp.o
 qt-weather-dashboard: CMakeFiles/qt-weather-dashboard.dir/build.make
 qt-weather-dashboard: /usr/lib/x86_64-linux-gnu/libQt6Widgets.so.6.4.2
+qt-weather-dashboard: /usr/lib/x86_64-linux-gnu/libQt6Network.so.6.4.2
 qt-weather-dashboard: /usr/lib/x86_64-linux-gnu/libQt6Gui.so.6.4.2
-qt-weather-dashboard: /usr/lib/x86_64-linux-gnu/libQt6Core.so.6.4.2
 qt-weather-dashboard: /usr/lib/x86_64-linux-gnu/libGLX.so
 qt-weather-dashboard: /usr/lib/x86_64-linux-gnu/libOpenGL.so
+qt-weather-dashboard: /usr/lib/x86_64-linux-gnu/libQt6Core.so.6.4.2
 qt-weather-dashboard: CMakeFiles/qt-weather-dashboard.dir/link.txt
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/mnt/c/Users/be500/Documents/GitHub/qt-weather-dashboard/build/Desktop-Debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Linking CXX executable qt-weather-dashboard"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/qt-weather-dashboard.dir/link.txt --verbose=$(VERBOSE)
