@@ -118,11 +118,56 @@ CMakeFiles/qt-weather-dashboard.dir/mainwindow.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/qt-weather-dashboard.dir/mainwindow.cpp.s"
 	/usr/bin/clang++-18 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /mnt/c/Users/be500/Documents/GitHub/qt-weather-dashboard/mainwindow.cpp -o CMakeFiles/qt-weather-dashboard.dir/mainwindow.cpp.s
 
+CMakeFiles/qt-weather-dashboard.dir/weatherdata.cpp.o: CMakeFiles/qt-weather-dashboard.dir/flags.make
+CMakeFiles/qt-weather-dashboard.dir/weatherdata.cpp.o: /mnt/c/Users/be500/Documents/GitHub/qt-weather-dashboard/weatherdata.cpp
+CMakeFiles/qt-weather-dashboard.dir/weatherdata.cpp.o: CMakeFiles/qt-weather-dashboard.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/mnt/c/Users/be500/Documents/GitHub/qt-weather-dashboard/build/Desktop-Debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/qt-weather-dashboard.dir/weatherdata.cpp.o"
+	/usr/bin/clang++-18 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/qt-weather-dashboard.dir/weatherdata.cpp.o -MF CMakeFiles/qt-weather-dashboard.dir/weatherdata.cpp.o.d -o CMakeFiles/qt-weather-dashboard.dir/weatherdata.cpp.o -c /mnt/c/Users/be500/Documents/GitHub/qt-weather-dashboard/weatherdata.cpp
+
+CMakeFiles/qt-weather-dashboard.dir/weatherdata.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/qt-weather-dashboard.dir/weatherdata.cpp.i"
+	/usr/bin/clang++-18 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /mnt/c/Users/be500/Documents/GitHub/qt-weather-dashboard/weatherdata.cpp > CMakeFiles/qt-weather-dashboard.dir/weatherdata.cpp.i
+
+CMakeFiles/qt-weather-dashboard.dir/weatherdata.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/qt-weather-dashboard.dir/weatherdata.cpp.s"
+	/usr/bin/clang++-18 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /mnt/c/Users/be500/Documents/GitHub/qt-weather-dashboard/weatherdata.cpp -o CMakeFiles/qt-weather-dashboard.dir/weatherdata.cpp.s
+
+CMakeFiles/qt-weather-dashboard.dir/weatherservice.cpp.o: CMakeFiles/qt-weather-dashboard.dir/flags.make
+CMakeFiles/qt-weather-dashboard.dir/weatherservice.cpp.o: /mnt/c/Users/be500/Documents/GitHub/qt-weather-dashboard/weatherservice.cpp
+CMakeFiles/qt-weather-dashboard.dir/weatherservice.cpp.o: CMakeFiles/qt-weather-dashboard.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/mnt/c/Users/be500/Documents/GitHub/qt-weather-dashboard/build/Desktop-Debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object CMakeFiles/qt-weather-dashboard.dir/weatherservice.cpp.o"
+	/usr/bin/clang++-18 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/qt-weather-dashboard.dir/weatherservice.cpp.o -MF CMakeFiles/qt-weather-dashboard.dir/weatherservice.cpp.o.d -o CMakeFiles/qt-weather-dashboard.dir/weatherservice.cpp.o -c /mnt/c/Users/be500/Documents/GitHub/qt-weather-dashboard/weatherservice.cpp
+
+CMakeFiles/qt-weather-dashboard.dir/weatherservice.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/qt-weather-dashboard.dir/weatherservice.cpp.i"
+	/usr/bin/clang++-18 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /mnt/c/Users/be500/Documents/GitHub/qt-weather-dashboard/weatherservice.cpp > CMakeFiles/qt-weather-dashboard.dir/weatherservice.cpp.i
+
+CMakeFiles/qt-weather-dashboard.dir/weatherservice.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/qt-weather-dashboard.dir/weatherservice.cpp.s"
+	/usr/bin/clang++-18 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /mnt/c/Users/be500/Documents/GitHub/qt-weather-dashboard/weatherservice.cpp -o CMakeFiles/qt-weather-dashboard.dir/weatherservice.cpp.s
+
+CMakeFiles/qt-weather-dashboard.dir/locationmanager.cpp.o: CMakeFiles/qt-weather-dashboard.dir/flags.make
+CMakeFiles/qt-weather-dashboard.dir/locationmanager.cpp.o: /mnt/c/Users/be500/Documents/GitHub/qt-weather-dashboard/locationmanager.cpp
+CMakeFiles/qt-weather-dashboard.dir/locationmanager.cpp.o: CMakeFiles/qt-weather-dashboard.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/mnt/c/Users/be500/Documents/GitHub/qt-weather-dashboard/build/Desktop-Debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building CXX object CMakeFiles/qt-weather-dashboard.dir/locationmanager.cpp.o"
+	/usr/bin/clang++-18 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/qt-weather-dashboard.dir/locationmanager.cpp.o -MF CMakeFiles/qt-weather-dashboard.dir/locationmanager.cpp.o.d -o CMakeFiles/qt-weather-dashboard.dir/locationmanager.cpp.o -c /mnt/c/Users/be500/Documents/GitHub/qt-weather-dashboard/locationmanager.cpp
+
+CMakeFiles/qt-weather-dashboard.dir/locationmanager.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/qt-weather-dashboard.dir/locationmanager.cpp.i"
+	/usr/bin/clang++-18 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /mnt/c/Users/be500/Documents/GitHub/qt-weather-dashboard/locationmanager.cpp > CMakeFiles/qt-weather-dashboard.dir/locationmanager.cpp.i
+
+CMakeFiles/qt-weather-dashboard.dir/locationmanager.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/qt-weather-dashboard.dir/locationmanager.cpp.s"
+	/usr/bin/clang++-18 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /mnt/c/Users/be500/Documents/GitHub/qt-weather-dashboard/locationmanager.cpp -o CMakeFiles/qt-weather-dashboard.dir/locationmanager.cpp.s
+
 # Object files for target qt-weather-dashboard
 qt__weather__dashboard_OBJECTS = \
 "CMakeFiles/qt-weather-dashboard.dir/qt-weather-dashboard_autogen/mocs_compilation.cpp.o" \
 "CMakeFiles/qt-weather-dashboard.dir/main.cpp.o" \
-"CMakeFiles/qt-weather-dashboard.dir/mainwindow.cpp.o"
+"CMakeFiles/qt-weather-dashboard.dir/mainwindow.cpp.o" \
+"CMakeFiles/qt-weather-dashboard.dir/weatherdata.cpp.o" \
+"CMakeFiles/qt-weather-dashboard.dir/weatherservice.cpp.o" \
+"CMakeFiles/qt-weather-dashboard.dir/locationmanager.cpp.o"
 
 # External object files for target qt-weather-dashboard
 qt__weather__dashboard_EXTERNAL_OBJECTS =
@@ -130,6 +175,9 @@ qt__weather__dashboard_EXTERNAL_OBJECTS =
 qt-weather-dashboard: CMakeFiles/qt-weather-dashboard.dir/qt-weather-dashboard_autogen/mocs_compilation.cpp.o
 qt-weather-dashboard: CMakeFiles/qt-weather-dashboard.dir/main.cpp.o
 qt-weather-dashboard: CMakeFiles/qt-weather-dashboard.dir/mainwindow.cpp.o
+qt-weather-dashboard: CMakeFiles/qt-weather-dashboard.dir/weatherdata.cpp.o
+qt-weather-dashboard: CMakeFiles/qt-weather-dashboard.dir/weatherservice.cpp.o
+qt-weather-dashboard: CMakeFiles/qt-weather-dashboard.dir/locationmanager.cpp.o
 qt-weather-dashboard: CMakeFiles/qt-weather-dashboard.dir/build.make
 qt-weather-dashboard: /usr/lib/x86_64-linux-gnu/libQt6Widgets.so.6.4.2
 qt-weather-dashboard: /usr/lib/x86_64-linux-gnu/libQt6Gui.so.6.4.2
@@ -137,7 +185,7 @@ qt-weather-dashboard: /usr/lib/x86_64-linux-gnu/libQt6Core.so.6.4.2
 qt-weather-dashboard: /usr/lib/x86_64-linux-gnu/libGLX.so
 qt-weather-dashboard: /usr/lib/x86_64-linux-gnu/libOpenGL.so
 qt-weather-dashboard: CMakeFiles/qt-weather-dashboard.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/mnt/c/Users/be500/Documents/GitHub/qt-weather-dashboard/build/Desktop-Debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Linking CXX executable qt-weather-dashboard"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/mnt/c/Users/be500/Documents/GitHub/qt-weather-dashboard/build/Desktop-Debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Linking CXX executable qt-weather-dashboard"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/qt-weather-dashboard.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.

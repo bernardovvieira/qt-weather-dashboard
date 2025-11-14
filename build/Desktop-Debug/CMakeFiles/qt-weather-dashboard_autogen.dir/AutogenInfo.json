@@ -274,9 +274,27 @@
 	"HEADERS" : 
 	[
 		[
+			"/mnt/c/Users/be500/Documents/GitHub/qt-weather-dashboard/locationmanager.h",
+			"MU",
+			"EWIEGA46WW/moc_locationmanager.cpp",
+			null
+		],
+		[
 			"/mnt/c/Users/be500/Documents/GitHub/qt-weather-dashboard/mainwindow.h",
 			"MU",
 			"EWIEGA46WW/moc_mainwindow.cpp",
+			null
+		],
+		[
+			"/mnt/c/Users/be500/Documents/GitHub/qt-weather-dashboard/weatherdata.h",
+			"MU",
+			"EWIEGA46WW/moc_weatherdata.cpp",
+			null
+		],
+		[
+			"/mnt/c/Users/be500/Documents/GitHub/qt-weather-dashboard/weatherservice.h",
+			"MU",
+			"EWIEGA46WW/moc_weatherservice.cpp",
 			null
 		]
 	],
@@ -339,12 +357,27 @@
 	"SOURCES" : 
 	[
 		[
+			"/mnt/c/Users/be500/Documents/GitHub/qt-weather-dashboard/locationmanager.cpp",
+			"MU",
+			null
+		],
+		[
 			"/mnt/c/Users/be500/Documents/GitHub/qt-weather-dashboard/main.cpp",
 			"MU",
 			null
 		],
 		[
 			"/mnt/c/Users/be500/Documents/GitHub/qt-weather-dashboard/mainwindow.cpp",
+			"MU",
+			null
+		],
+		[
+			"/mnt/c/Users/be500/Documents/GitHub/qt-weather-dashboard/weatherdata.cpp",
+			"MU",
+			null
+		],
+		[
+			"/mnt/c/Users/be500/Documents/GitHub/qt-weather-dashboard/weatherservice.cpp",
 			"MU",
 			null
 		]

@@ -39,8 +39,8 @@ events:
     checks:
       - "Detecting CXX compiler ABI info"
     directories:
-      source: "/mnt/c/Users/be500/Documents/GitHub/qt-weather-dashboard/build/Desktop-Debug/CMakeFiles/CMakeScratch/TryCompile-iRhB63"
-      binary: "/mnt/c/Users/be500/Documents/GitHub/qt-weather-dashboard/build/Desktop-Debug/CMakeFiles/CMakeScratch/TryCompile-iRhB63"
+      source: "/mnt/c/Users/be500/Documents/GitHub/qt-weather-dashboard/build/Desktop-Debug/CMakeFiles/CMakeScratch/TryCompile-3eeU5V"
+      binary: "/mnt/c/Users/be500/Documents/GitHub/qt-weather-dashboard/build/Desktop-Debug/CMakeFiles/CMakeScratch/TryCompile-3eeU5V"
     cmakeVariables:
       CMAKE_CXX_COMPILER_CLANG_SCAN_DEPS: "/usr/bin/clang-scan-deps-18"
       CMAKE_CXX_FLAGS: "-DQT_QML_DEBUG"
@@ -49,15 +49,13 @@ events:
       variable: "CMAKE_CXX_ABI_COMPILED"
       cached: true
       stdout: |
-        Change Dir: '/mnt/c/Users/be500/Documents/GitHub/qt-weather-dashboard/build/Desktop-Debug/CMakeFiles/CMakeScratch/TryCompile-iRhB63'
+        Change Dir: '/mnt/c/Users/be500/Documents/GitHub/qt-weather-dashboard/build/Desktop-Debug/CMakeFiles/CMakeScratch/TryCompile-3eeU5V'
         
-        Run Build Command(s): /usr/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_09b0c/fast
-        gmake: Warning: File 'Makefile' has modification time 0.096 s in the future
-        /usr/bin/gmake  -f CMakeFiles/cmTC_09b0c.dir/build.make CMakeFiles/cmTC_09b0c.dir/build
-        gmake[1]: Entering directory '/mnt/c/Users/be500/Documents/GitHub/qt-weather-dashboard/build/Desktop-Debug/CMakeFiles/CMakeScratch/TryCompile-iRhB63'
-        gmake[1]: Warning: File 'CMakeFiles/cmTC_09b0c.dir/flags.make' has modification time 0.079 s in the future
-        Building CXX object CMakeFiles/cmTC_09b0c.dir/CMakeCXXCompilerABI.cpp.o
-        /usr/bin/clang++-18   -DQT_QML_DEBUG  -fcolor-diagnostics   -v -MD -MT CMakeFiles/cmTC_09b0c.dir/CMakeCXXCompilerABI.cpp.o -MF CMakeFiles/cmTC_09b0c.dir/CMakeCXXCompilerABI.cpp.o.d -o CMakeFiles/cmTC_09b0c.dir/CMakeCXXCompilerABI.cpp.o -c /usr/share/cmake-3.28/Modules/CMakeCXXCompilerABI.cpp
+        Run Build Command(s): /usr/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_c2870/fast
+        /usr/bin/gmake  -f CMakeFiles/cmTC_c2870.dir/build.make CMakeFiles/cmTC_c2870.dir/build
+        gmake[1]: Entering directory '/mnt/c/Users/be500/Documents/GitHub/qt-weather-dashboard/build/Desktop-Debug/CMakeFiles/CMakeScratch/TryCompile-3eeU5V'
+        Building CXX object CMakeFiles/cmTC_c2870.dir/CMakeCXXCompilerABI.cpp.o
+        /usr/bin/clang++-18   -DQT_QML_DEBUG  -fcolor-diagnostics   -v -MD -MT CMakeFiles/cmTC_c2870.dir/CMakeCXXCompilerABI.cpp.o -MF CMakeFiles/cmTC_c2870.dir/CMakeCXXCompilerABI.cpp.o.d -o CMakeFiles/cmTC_c2870.dir/CMakeCXXCompilerABI.cpp.o -c /usr/share/cmake-3.28/Modules/CMakeCXXCompilerABI.cpp
         Ubuntu clang version 18.1.3 (1ubuntu1)
         Target: x86_64-pc-linux-gnu
         Thread model: posix
@@ -67,7 +65,7 @@ events:
         Candidate multilib: .;@m64
         Selected multilib: .;@m64
          (in-process)
-         "/usr/lib/llvm-18/bin/clang" -cc1 -triple x86_64-pc-linux-gnu -emit-obj -mrelax-all -disable-free -clear-ast-before-backend -disable-llvm-verifier -discard-value-names -main-file-name CMakeCXXCompilerABI.cpp -mrelocation-model pic -pic-level 2 -pic-is-pie -mframe-pointer=all -fmath-errno -ffp-contract=on -fno-rounding-math -mconstructor-aliases -funwind-tables=2 -target-cpu x86-64 -tune-cpu generic -debugger-tuning=gdb -fdebug-compilation-dir=/mnt/c/Users/be500/Documents/GitHub/qt-weather-dashboard/build/Desktop-Debug/CMakeFiles/CMakeScratch/TryCompile-iRhB63 -v -fcoverage-compilation-dir=/mnt/c/Users/be500/Documents/GitHub/qt-weather-dashboard/build/Desktop-Debug/CMakeFiles/CMakeScratch/TryCompile-iRhB63 -resource-dir /usr/lib/llvm-18/lib/clang/18 -dependency-file CMakeFiles/cmTC_09b0c.dir/CMakeCXXCompilerABI.cpp.o.d -MT CMakeFiles/cmTC_09b0c.dir/CMakeCXXCompilerABI.cpp.o -sys-header-deps -D QT_QML_DEBUG -internal-isystem /usr/bin/../lib/gcc/x86_64-linux-gnu/13/../../../../include/c++/13 -internal-isystem /usr/bin/../lib/gcc/x86_64-linux-gnu/13/../../../../include/x86_64-linux-gnu/c++/13 -internal-isystem /usr/bin/../lib/gcc/x86_64-linux-gnu/13/../../../../include/c++/13/backward -internal-isystem /usr/lib/llvm-18/lib/clang/18/include -internal-isystem /usr/local/include -internal-isystem /usr/bin/../lib/gcc/x86_64-linux-gnu/13/../../../../x86_64-linux-gnu/include -internal-externc-isystem /usr/include/x86_64-linux-gnu -internal-externc-isystem /include -internal-externc-isystem /usr/include -fdeprecated-macro -ferror-limit 19 -fgnuc-version=4.2.1 -fskip-odr-check-in-gmf -fcxx-exceptions -fexceptions -fcolor-diagnostics -faddrsig -D__GCC_HAVE_DWARF2_CFI_ASM=1 -o CMakeFiles/cmTC_09b0c.dir/CMakeCXXCompilerABI.cpp.o -x c++ /usr/share/cmake-3.28/Modules/CMakeCXXCompilerABI.cpp
+         "/usr/lib/llvm-18/bin/clang" -cc1 -triple x86_64-pc-linux-gnu -emit-obj -mrelax-all -disable-free -clear-ast-before-backend -disable-llvm-verifier -discard-value-names -main-file-name CMakeCXXCompilerABI.cpp -mrelocation-model pic -pic-level 2 -pic-is-pie -mframe-pointer=all -fmath-errno -ffp-contract=on -fno-rounding-math -mconstructor-aliases -funwind-tables=2 -target-cpu x86-64 -tune-cpu generic -debugger-tuning=gdb -fdebug-compilation-dir=/mnt/c/Users/be500/Documents/GitHub/qt-weather-dashboard/build/Desktop-Debug/CMakeFiles/CMakeScratch/TryCompile-3eeU5V -v -fcoverage-compilation-dir=/mnt/c/Users/be500/Documents/GitHub/qt-weather-dashboard/build/Desktop-Debug/CMakeFiles/CMakeScratch/TryCompile-3eeU5V -resource-dir /usr/lib/llvm-18/lib/clang/18 -dependency-file CMakeFiles/cmTC_c2870.dir/CMakeCXXCompilerABI.cpp.o.d -MT CMakeFiles/cmTC_c2870.dir/CMakeCXXCompilerABI.cpp.o -sys-header-deps -D QT_QML_DEBUG -internal-isystem /usr/bin/../lib/gcc/x86_64-linux-gnu/13/../../../../include/c++/13 -internal-isystem /usr/bin/../lib/gcc/x86_64-linux-gnu/13/../../../../include/x86_64-linux-gnu/c++/13 -internal-isystem /usr/bin/../lib/gcc/x86_64-linux-gnu/13/../../../../include/c++/13/backward -internal-isystem /usr/lib/llvm-18/lib/clang/18/include -internal-isystem /usr/local/include -internal-isystem /usr/bin/../lib/gcc/x86_64-linux-gnu/13/../../../../x86_64-linux-gnu/include -internal-externc-isystem /usr/include/x86_64-linux-gnu -internal-externc-isystem /include -internal-externc-isystem /usr/include -fdeprecated-macro -ferror-limit 19 -fgnuc-version=4.2.1 -fskip-odr-check-in-gmf -fcxx-exceptions -fexceptions -fcolor-diagnostics -faddrsig -D__GCC_HAVE_DWARF2_CFI_ASM=1 -o CMakeFiles/cmTC_c2870.dir/CMakeCXXCompilerABI.cpp.o -x c++ /usr/share/cmake-3.28/Modules/CMakeCXXCompilerABI.cpp
         clang -cc1 version 18.1.3 based upon LLVM 18.1.3 default target x86_64-pc-linux-gnu
         ignoring nonexistent directory "/usr/bin/../lib/gcc/x86_64-linux-gnu/13/../../../../x86_64-linux-gnu/include"
         ignoring nonexistent directory "/include"
@@ -81,9 +79,9 @@ events:
          /usr/include/x86_64-linux-gnu
          /usr/include
         End of search list.
-        Linking CXX executable cmTC_09b0c
-        /usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_09b0c.dir/link.txt --verbose=1
-        /usr/bin/clang++-18 -DQT_QML_DEBUG   -v CMakeFiles/cmTC_09b0c.dir/CMakeCXXCompilerABI.cpp.o -o cmTC_09b0c 
+        Linking CXX executable cmTC_c2870
+        /usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_c2870.dir/link.txt --verbose=1
+        /usr/bin/clang++-18 -DQT_QML_DEBUG   -v CMakeFiles/cmTC_c2870.dir/CMakeCXXCompilerABI.cpp.o -o cmTC_c2870 
         Ubuntu clang version 18.1.3 (1ubuntu1)
         Target: x86_64-pc-linux-gnu
         Thread model: posix
@@ -92,10 +90,8 @@ events:
         Selected GCC installation: /usr/bin/../lib/gcc/x86_64-linux-gnu/13
         Candidate multilib: .;@m64
         Selected multilib: .;@m64
-         "/usr/bin/ld" -z relro --hash-style=gnu --build-id --eh-frame-hdr -m elf_x86_64 -pie -dynamic-linker /lib64/ld-linux-x86-64.so.2 -o cmTC_09b0c /lib/x86_64-linux-gnu/Scrt1.o /lib/x86_64-linux-gnu/crti.o /usr/bin/../lib/gcc/x86_64-linux-gnu/13/crtbeginS.o -L/usr/bin/../lib/gcc/x86_64-linux-gnu/13 -L/usr/bin/../lib/gcc/x86_64-linux-gnu/13/../../../../lib64 -L/lib/x86_64-linux-gnu -L/lib/../lib64 -L/usr/lib/x86_64-linux-gnu -L/usr/lib/../lib64 -L/lib -L/usr/lib CMakeFiles/cmTC_09b0c.dir/CMakeCXXCompilerABI.cpp.o -lstdc++ -lm -lgcc_s -lgcc -lc -lgcc_s -lgcc /usr/bin/../lib/gcc/x86_64-linux-gnu/13/crtendS.o /lib/x86_64-linux-gnu/crtn.o
-        gmake[1]: warning:  Clock skew detected.  Your build may be incomplete.
-        gmake[1]: Leaving directory '/mnt/c/Users/be500/Documents/GitHub/qt-weather-dashboard/build/Desktop-Debug/CMakeFiles/CMakeScratch/TryCompile-iRhB63'
-        gmake: warning:  Clock skew detected.  Your build may be incomplete.
+         "/usr/bin/ld" -z relro --hash-style=gnu --build-id --eh-frame-hdr -m elf_x86_64 -pie -dynamic-linker /lib64/ld-linux-x86-64.so.2 -o cmTC_c2870 /lib/x86_64-linux-gnu/Scrt1.o /lib/x86_64-linux-gnu/crti.o /usr/bin/../lib/gcc/x86_64-linux-gnu/13/crtbeginS.o -L/usr/bin/../lib/gcc/x86_64-linux-gnu/13 -L/usr/bin/../lib/gcc/x86_64-linux-gnu/13/../../../../lib64 -L/lib/x86_64-linux-gnu -L/lib/../lib64 -L/usr/lib/x86_64-linux-gnu -L/usr/lib/../lib64 -L/lib -L/usr/lib CMakeFiles/cmTC_c2870.dir/CMakeCXXCompilerABI.cpp.o -lstdc++ -lm -lgcc_s -lgcc -lc -lgcc_s -lgcc /usr/bin/../lib/gcc/x86_64-linux-gnu/13/crtendS.o /lib/x86_64-linux-gnu/crtn.o
+        gmake[1]: Leaving directory '/mnt/c/Users/be500/Documents/GitHub/qt-weather-dashboard/build/Desktop-Debug/CMakeFiles/CMakeScratch/TryCompile-3eeU5V'
         
       exitCode: 0
   -
@@ -135,15 +131,13 @@ events:
     message: |
       Parsed CXX implicit link information:
         link line regex: [^( *|.*[/\\])(ld|CMAKE_LINK_STARTFILE-NOTFOUND|([^/\\]+-)?ld|collect2)[^/\\]*( |$)]
-        ignore line: [Change Dir: '/mnt/c/Users/be500/Documents/GitHub/qt-weather-dashboard/build/Desktop-Debug/CMakeFiles/CMakeScratch/TryCompile-iRhB63']
+        ignore line: [Change Dir: '/mnt/c/Users/be500/Documents/GitHub/qt-weather-dashboard/build/Desktop-Debug/CMakeFiles/CMakeScratch/TryCompile-3eeU5V']
         ignore line: []
-        ignore line: [Run Build Command(s): /usr/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_09b0c/fast]
-        ignore line: [gmake: Warning: File 'Makefile' has modification time 0.096 s in the future]
-        ignore line: [/usr/bin/gmake  -f CMakeFiles/cmTC_09b0c.dir/build.make CMakeFiles/cmTC_09b0c.dir/build]
-        ignore line: [gmake[1]: Entering directory '/mnt/c/Users/be500/Documents/GitHub/qt-weather-dashboard/build/Desktop-Debug/CMakeFiles/CMakeScratch/TryCompile-iRhB63']
-        ignore line: [gmake[1]: Warning: File 'CMakeFiles/cmTC_09b0c.dir/flags.make' has modification time 0.079 s in the future]
-        ignore line: [Building CXX object CMakeFiles/cmTC_09b0c.dir/CMakeCXXCompilerABI.cpp.o]
-        ignore line: [/usr/bin/clang++-18   -DQT_QML_DEBUG  -fcolor-diagnostics   -v -MD -MT CMakeFiles/cmTC_09b0c.dir/CMakeCXXCompilerABI.cpp.o -MF CMakeFiles/cmTC_09b0c.dir/CMakeCXXCompilerABI.cpp.o.d -o CMakeFiles/cmTC_09b0c.dir/CMakeCXXCompilerABI.cpp.o -c /usr/share/cmake-3.28/Modules/CMakeCXXCompilerABI.cpp]
+        ignore line: [Run Build Command(s): /usr/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_c2870/fast]
+        ignore line: [/usr/bin/gmake  -f CMakeFiles/cmTC_c2870.dir/build.make CMakeFiles/cmTC_c2870.dir/build]
+        ignore line: [gmake[1]: Entering directory '/mnt/c/Users/be500/Documents/GitHub/qt-weather-dashboard/build/Desktop-Debug/CMakeFiles/CMakeScratch/TryCompile-3eeU5V']
+        ignore line: [Building CXX object CMakeFiles/cmTC_c2870.dir/CMakeCXXCompilerABI.cpp.o]
+        ignore line: [/usr/bin/clang++-18   -DQT_QML_DEBUG  -fcolor-diagnostics   -v -MD -MT CMakeFiles/cmTC_c2870.dir/CMakeCXXCompilerABI.cpp.o -MF CMakeFiles/cmTC_c2870.dir/CMakeCXXCompilerABI.cpp.o.d -o CMakeFiles/cmTC_c2870.dir/CMakeCXXCompilerABI.cpp.o -c /usr/share/cmake-3.28/Modules/CMakeCXXCompilerABI.cpp]
         ignore line: [Ubuntu clang version 18.1.3 (1ubuntu1)]
         ignore line: [Target: x86_64-pc-linux-gnu]
         ignore line: [Thread model: posix]
@@ -155,7 +149,7 @@ events:
         ignore line: [Selected multilib: .]
         ignore line: [@m64]
         ignore line: [ (in-process)]
-        ignore line: [ "/usr/lib/llvm-18/bin/clang" -cc1 -triple x86_64-pc-linux-gnu -emit-obj -mrelax-all -disable-free -clear-ast-before-backend -disable-llvm-verifier -discard-value-names -main-file-name CMakeCXXCompilerABI.cpp -mrelocation-model pic -pic-level 2 -pic-is-pie -mframe-pointer=all -fmath-errno -ffp-contract=on -fno-rounding-math -mconstructor-aliases -funwind-tables=2 -target-cpu x86-64 -tune-cpu generic -debugger-tuning=gdb -fdebug-compilation-dir=/mnt/c/Users/be500/Documents/GitHub/qt-weather-dashboard/build/Desktop-Debug/CMakeFiles/CMakeScratch/TryCompile-iRhB63 -v -fcoverage-compilation-dir=/mnt/c/Users/be500/Documents/GitHub/qt-weather-dashboard/build/Desktop-Debug/CMakeFiles/CMakeScratch/TryCompile-iRhB63 -resource-dir /usr/lib/llvm-18/lib/clang/18 -dependency-file CMakeFiles/cmTC_09b0c.dir/CMakeCXXCompilerABI.cpp.o.d -MT CMakeFiles/cmTC_09b0c.dir/CMakeCXXCompilerABI.cpp.o -sys-header-deps -D QT_QML_DEBUG -internal-isystem /usr/bin/../lib/gcc/x86_64-linux-gnu/13/../../../../include/c++/13 -internal-isystem /usr/bin/../lib/gcc/x86_64-linux-gnu/13/../../../../include/x86_64-linux-gnu/c++/13 -internal-isystem /usr/bin/../lib/gcc/x86_64-linux-gnu/13/../../../../include/c++/13/backward -internal-isystem /usr/lib/llvm-18/lib/clang/18/include -internal-isystem /usr/local/include -internal-isystem /usr/bin/../lib/gcc/x86_64-linux-gnu/13/../../../../x86_64-linux-gnu/include -internal-externc-isystem /usr/include/x86_64-linux-gnu -internal-externc-isystem /include -internal-externc-isystem /usr/include -fdeprecated-macro -ferror-limit 19 -fgnuc-version=4.2.1 -fskip-odr-check-in-gmf -fcxx-exceptions -fexceptions -fcolor-diagnostics -faddrsig -D__GCC_HAVE_DWARF2_CFI_ASM=1 -o CMakeFiles/cmTC_09b0c.dir/CMakeCXXCompilerABI.cpp.o -x c++ /usr/share/cmake-3.28/Modules/CMakeCXXCompilerABI.cpp]
+        ignore line: [ "/usr/lib/llvm-18/bin/clang" -cc1 -triple x86_64-pc-linux-gnu -emit-obj -mrelax-all -disable-free -clear-ast-before-backend -disable-llvm-verifier -discard-value-names -main-file-name CMakeCXXCompilerABI.cpp -mrelocation-model pic -pic-level 2 -pic-is-pie -mframe-pointer=all -fmath-errno -ffp-contract=on -fno-rounding-math -mconstructor-aliases -funwind-tables=2 -target-cpu x86-64 -tune-cpu generic -debugger-tuning=gdb -fdebug-compilation-dir=/mnt/c/Users/be500/Documents/GitHub/qt-weather-dashboard/build/Desktop-Debug/CMakeFiles/CMakeScratch/TryCompile-3eeU5V -v -fcoverage-compilation-dir=/mnt/c/Users/be500/Documents/GitHub/qt-weather-dashboard/build/Desktop-Debug/CMakeFiles/CMakeScratch/TryCompile-3eeU5V -resource-dir /usr/lib/llvm-18/lib/clang/18 -dependency-file CMakeFiles/cmTC_c2870.dir/CMakeCXXCompilerABI.cpp.o.d -MT CMakeFiles/cmTC_c2870.dir/CMakeCXXCompilerABI.cpp.o -sys-header-deps -D QT_QML_DEBUG -internal-isystem /usr/bin/../lib/gcc/x86_64-linux-gnu/13/../../../../include/c++/13 -internal-isystem /usr/bin/../lib/gcc/x86_64-linux-gnu/13/../../../../include/x86_64-linux-gnu/c++/13 -internal-isystem /usr/bin/../lib/gcc/x86_64-linux-gnu/13/../../../../include/c++/13/backward -internal-isystem /usr/lib/llvm-18/lib/clang/18/include -internal-isystem /usr/local/include -internal-isystem /usr/bin/../lib/gcc/x86_64-linux-gnu/13/../../../../x86_64-linux-gnu/include -internal-externc-isystem /usr/include/x86_64-linux-gnu -internal-externc-isystem /include -internal-externc-isystem /usr/include -fdeprecated-macro -ferror-limit 19 -fgnuc-version=4.2.1 -fskip-odr-check-in-gmf -fcxx-exceptions -fexceptions -fcolor-diagnostics -faddrsig -D__GCC_HAVE_DWARF2_CFI_ASM=1 -o CMakeFiles/cmTC_c2870.dir/CMakeCXXCompilerABI.cpp.o -x c++ /usr/share/cmake-3.28/Modules/CMakeCXXCompilerABI.cpp]
         ignore line: [clang -cc1 version 18.1.3 based upon LLVM 18.1.3 default target x86_64-pc-linux-gnu]
         ignore line: [ignoring nonexistent directory "/usr/bin/../lib/gcc/x86_64-linux-gnu/13/../../../../x86_64-linux-gnu/include"]
         ignore line: [ignoring nonexistent directory "/include"]
@@ -169,9 +163,9 @@ events:
         ignore line: [ /usr/include/x86_64-linux-gnu]
         ignore line: [ /usr/include]
         ignore line: [End of search list.]
-        ignore line: [Linking CXX executable cmTC_09b0c]
-        ignore line: [/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_09b0c.dir/link.txt --verbose=1]
-        ignore line: [/usr/bin/clang++-18 -DQT_QML_DEBUG   -v CMakeFiles/cmTC_09b0c.dir/CMakeCXXCompilerABI.cpp.o -o cmTC_09b0c ]
+        ignore line: [Linking CXX executable cmTC_c2870]
+        ignore line: [/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_c2870.dir/link.txt --verbose=1]
+        ignore line: [/usr/bin/clang++-18 -DQT_QML_DEBUG   -v CMakeFiles/cmTC_c2870.dir/CMakeCXXCompilerABI.cpp.o -o cmTC_c2870 ]
         ignore line: [Ubuntu clang version 18.1.3 (1ubuntu1)]
         ignore line: [Target: x86_64-pc-linux-gnu]
         ignore line: [Thread model: posix]
@@ -182,7 +176,7 @@ events:
         ignore line: [@m64]
         ignore line: [Selected multilib: .]
         ignore line: [@m64]
-        link line: [ "/usr/bin/ld" -z relro --hash-style=gnu --build-id --eh-frame-hdr -m elf_x86_64 -pie -dynamic-linker /lib64/ld-linux-x86-64.so.2 -o cmTC_09b0c /lib/x86_64-linux-gnu/Scrt1.o /lib/x86_64-linux-gnu/crti.o /usr/bin/../lib/gcc/x86_64-linux-gnu/13/crtbeginS.o -L/usr/bin/../lib/gcc/x86_64-linux-gnu/13 -L/usr/bin/../lib/gcc/x86_64-linux-gnu/13/../../../../lib64 -L/lib/x86_64-linux-gnu -L/lib/../lib64 -L/usr/lib/x86_64-linux-gnu -L/usr/lib/../lib64 -L/lib -L/usr/lib CMakeFiles/cmTC_09b0c.dir/CMakeCXXCompilerABI.cpp.o -lstdc++ -lm -lgcc_s -lgcc -lc -lgcc_s -lgcc /usr/bin/../lib/gcc/x86_64-linux-gnu/13/crtendS.o /lib/x86_64-linux-gnu/crtn.o]
+        link line: [ "/usr/bin/ld" -z relro --hash-style=gnu --build-id --eh-frame-hdr -m elf_x86_64 -pie -dynamic-linker /lib64/ld-linux-x86-64.so.2 -o cmTC_c2870 /lib/x86_64-linux-gnu/Scrt1.o /lib/x86_64-linux-gnu/crti.o /usr/bin/../lib/gcc/x86_64-linux-gnu/13/crtbeginS.o -L/usr/bin/../lib/gcc/x86_64-linux-gnu/13 -L/usr/bin/../lib/gcc/x86_64-linux-gnu/13/../../../../lib64 -L/lib/x86_64-linux-gnu -L/lib/../lib64 -L/usr/lib/x86_64-linux-gnu -L/usr/lib/../lib64 -L/lib -L/usr/lib CMakeFiles/cmTC_c2870.dir/CMakeCXXCompilerABI.cpp.o -lstdc++ -lm -lgcc_s -lgcc -lc -lgcc_s -lgcc /usr/bin/../lib/gcc/x86_64-linux-gnu/13/crtendS.o /lib/x86_64-linux-gnu/crtn.o]
           arg [/usr/bin/ld] ==> ignore
           arg [-zrelro] ==> ignore
           arg [--hash-style=gnu] ==> ignore
@@ -194,7 +188,7 @@ events:
           arg [-dynamic-linker] ==> ignore
           arg [/lib64/ld-linux-x86-64.so.2] ==> ignore
           arg [-o] ==> ignore
-          arg [cmTC_09b0c] ==> ignore
+          arg [cmTC_c2870] ==> ignore
           arg [/lib/x86_64-linux-gnu/Scrt1.o] ==> obj [/lib/x86_64-linux-gnu/Scrt1.o]
           arg [/lib/x86_64-linux-gnu/crti.o] ==> obj [/lib/x86_64-linux-gnu/crti.o]
           arg [/usr/bin/../lib/gcc/x86_64-linux-gnu/13/crtbeginS.o] ==> obj [/usr/bin/../lib/gcc/x86_64-linux-gnu/13/crtbeginS.o]
@@ -206,7 +200,7 @@ events:
           arg [-L/usr/lib/../lib64] ==> dir [/usr/lib/../lib64]
           arg [-L/lib] ==> dir [/lib]
           arg [-L/usr/lib] ==> dir [/usr/lib]
-          arg [CMakeFiles/cmTC_09b0c.dir/CMakeCXXCompilerABI.cpp.o] ==> ignore
+          arg [CMakeFiles/cmTC_c2870.dir/CMakeCXXCompilerABI.cpp.o] ==> ignore
           arg [-lstdc++] ==> lib [stdc++]
           arg [-lm] ==> lib [m]
           arg [-lgcc_s] ==> lib [gcc_s]
@@ -247,8 +241,8 @@ events:
     checks:
       - "Performing Test CMAKE_HAVE_LIBC_PTHREAD"
     directories:
-      source: "/mnt/c/Users/be500/Documents/GitHub/qt-weather-dashboard/build/Desktop-Debug/CMakeFiles/CMakeScratch/TryCompile-MOTz53"
-      binary: "/mnt/c/Users/be500/Documents/GitHub/qt-weather-dashboard/build/Desktop-Debug/CMakeFiles/CMakeScratch/TryCompile-MOTz53"
+      source: "/mnt/c/Users/be500/Documents/GitHub/qt-weather-dashboard/build/Desktop-Debug/CMakeFiles/CMakeScratch/TryCompile-pLQvJt"
+      binary: "/mnt/c/Users/be500/Documents/GitHub/qt-weather-dashboard/build/Desktop-Debug/CMakeFiles/CMakeScratch/TryCompile-pLQvJt"
     cmakeVariables:
       CMAKE_CXX_COMPILER_CLANG_SCAN_DEPS: "/usr/bin/clang-scan-deps-18"
       CMAKE_CXX_FLAGS: "-DQT_QML_DEBUG"
@@ -259,21 +253,17 @@ events:
       variable: "CMAKE_HAVE_LIBC_PTHREAD"
       cached: true
       stdout: |
-        Change Dir: '/mnt/c/Users/be500/Documents/GitHub/qt-weather-dashboard/build/Desktop-Debug/CMakeFiles/CMakeScratch/TryCompile-MOTz53'
+        Change Dir: '/mnt/c/Users/be500/Documents/GitHub/qt-weather-dashboard/build/Desktop-Debug/CMakeFiles/CMakeScratch/TryCompile-pLQvJt'
         
-        Run Build Command(s): /usr/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_11b3b/fast
-        gmake: Warning: File 'Makefile' has modification time 0.093 s in the future
-        /usr/bin/gmake  -f CMakeFiles/cmTC_11b3b.dir/build.make CMakeFiles/cmTC_11b3b.dir/build
-        gmake[1]: Entering directory '/mnt/c/Users/be500/Documents/GitHub/qt-weather-dashboard/build/Desktop-Debug/CMakeFiles/CMakeScratch/TryCompile-MOTz53'
-        gmake[1]: Warning: File 'CMakeFiles/cmTC_11b3b.dir/flags.make' has modification time 0.077 s in the future
-        Building CXX object CMakeFiles/cmTC_11b3b.dir/src.cxx.o
-        /usr/bin/clang++-18 -DCMAKE_HAVE_LIBC_PTHREAD  -DQT_QML_DEBUG  -std=gnu++17 -fcolor-diagnostics -MD -MT CMakeFiles/cmTC_11b3b.dir/src.cxx.o -MF CMakeFiles/cmTC_11b3b.dir/src.cxx.o.d -o CMakeFiles/cmTC_11b3b.dir/src.cxx.o -c /mnt/c/Users/be500/Documents/GitHub/qt-weather-dashboard/build/Desktop-Debug/CMakeFiles/CMakeScratch/TryCompile-MOTz53/src.cxx
-        Linking CXX executable cmTC_11b3b
-        /usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_11b3b.dir/link.txt --verbose=1
-        /usr/bin/clang++-18 -DQT_QML_DEBUG  CMakeFiles/cmTC_11b3b.dir/src.cxx.o -o cmTC_11b3b 
-        gmake[1]: warning:  Clock skew detected.  Your build may be incomplete.
-        gmake[1]: Leaving directory '/mnt/c/Users/be500/Documents/GitHub/qt-weather-dashboard/build/Desktop-Debug/CMakeFiles/CMakeScratch/TryCompile-MOTz53'
-        gmake: warning:  Clock skew detected.  Your build may be incomplete.
+        Run Build Command(s): /usr/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_284bb/fast
+        /usr/bin/gmake  -f CMakeFiles/cmTC_284bb.dir/build.make CMakeFiles/cmTC_284bb.dir/build
+        gmake[1]: Entering directory '/mnt/c/Users/be500/Documents/GitHub/qt-weather-dashboard/build/Desktop-Debug/CMakeFiles/CMakeScratch/TryCompile-pLQvJt'
+        Building CXX object CMakeFiles/cmTC_284bb.dir/src.cxx.o
+        /usr/bin/clang++-18 -DCMAKE_HAVE_LIBC_PTHREAD  -DQT_QML_DEBUG  -std=gnu++17 -fcolor-diagnostics -MD -MT CMakeFiles/cmTC_284bb.dir/src.cxx.o -MF CMakeFiles/cmTC_284bb.dir/src.cxx.o.d -o CMakeFiles/cmTC_284bb.dir/src.cxx.o -c /mnt/c/Users/be500/Documents/GitHub/qt-weather-dashboard/build/Desktop-Debug/CMakeFiles/CMakeScratch/TryCompile-pLQvJt/src.cxx
+        Linking CXX executable cmTC_284bb
+        /usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_284bb.dir/link.txt --verbose=1
+        /usr/bin/clang++-18 -DQT_QML_DEBUG  CMakeFiles/cmTC_284bb.dir/src.cxx.o -o cmTC_284bb 
+        gmake[1]: Leaving directory '/mnt/c/Users/be500/Documents/GitHub/qt-weather-dashboard/build/Desktop-Debug/CMakeFiles/CMakeScratch/TryCompile-pLQvJt'
         
       exitCode: 0
   -
@@ -295,8 +285,8 @@ events:
     checks:
       - "Performing Test HAVE_STDATOMIC"
     directories:
-      source: "/mnt/c/Users/be500/Documents/GitHub/qt-weather-dashboard/build/Desktop-Debug/CMakeFiles/CMakeScratch/TryCompile-vb38VB"
-      binary: "/mnt/c/Users/be500/Documents/GitHub/qt-weather-dashboard/build/Desktop-Debug/CMakeFiles/CMakeScratch/TryCompile-vb38VB"
+      source: "/mnt/c/Users/be500/Documents/GitHub/qt-weather-dashboard/build/Desktop-Debug/CMakeFiles/CMakeScratch/TryCompile-zd35YD"
+      binary: "/mnt/c/Users/be500/Documents/GitHub/qt-weather-dashboard/build/Desktop-Debug/CMakeFiles/CMakeScratch/TryCompile-zd35YD"
     cmakeVariables:
       CMAKE_CXX_COMPILER_CLANG_SCAN_DEPS: "/usr/bin/clang-scan-deps-18"
       CMAKE_CXX_FLAGS: "-DQT_QML_DEBUG"
@@ -307,21 +297,17 @@ events:
       variable: "HAVE_STDATOMIC"
       cached: true
       stdout: |
-        Change Dir: '/mnt/c/Users/be500/Documents/GitHub/qt-weather-dashboard/build/Desktop-Debug/CMakeFiles/CMakeScratch/TryCompile-vb38VB'
+        Change Dir: '/mnt/c/Users/be500/Documents/GitHub/qt-weather-dashboard/build/Desktop-Debug/CMakeFiles/CMakeScratch/TryCompile-zd35YD'
         
-        Run Build Command(s): /usr/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_7aae8/fast
-        gmake: Warning: File 'Makefile' has modification time 0.1 s in the future
-        /usr/bin/gmake  -f CMakeFiles/cmTC_7aae8.dir/build.make CMakeFiles/cmTC_7aae8.dir/build
-        gmake[1]: Entering directory '/mnt/c/Users/be500/Documents/GitHub/qt-weather-dashboard/build/Desktop-Debug/CMakeFiles/CMakeScratch/TryCompile-vb38VB'
-        gmake[1]: Warning: File 'CMakeFiles/cmTC_7aae8.dir/flags.make' has modification time 0.085 s in the future
-        Building CXX object CMakeFiles/cmTC_7aae8.dir/src.cxx.o
-        /usr/bin/clang++-18 -DHAVE_STDATOMIC  -DQT_QML_DEBUG  -std=gnu++17 -fcolor-diagnostics -MD -MT CMakeFiles/cmTC_7aae8.dir/src.cxx.o -MF CMakeFiles/cmTC_7aae8.dir/src.cxx.o.d -o CMakeFiles/cmTC_7aae8.dir/src.cxx.o -c /mnt/c/Users/be500/Documents/GitHub/qt-weather-dashboard/build/Desktop-Debug/CMakeFiles/CMakeScratch/TryCompile-vb38VB/src.cxx
-        Linking CXX executable cmTC_7aae8
-        /usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_7aae8.dir/link.txt --verbose=1
-        /usr/bin/clang++-18 -DQT_QML_DEBUG  CMakeFiles/cmTC_7aae8.dir/src.cxx.o -o cmTC_7aae8 
-        gmake[1]: warning:  Clock skew detected.  Your build may be incomplete.
-        gmake[1]: Leaving directory '/mnt/c/Users/be500/Documents/GitHub/qt-weather-dashboard/build/Desktop-Debug/CMakeFiles/CMakeScratch/TryCompile-vb38VB'
-        gmake: warning:  Clock skew detected.  Your build may be incomplete.
+        Run Build Command(s): /usr/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_df718/fast
+        /usr/bin/gmake  -f CMakeFiles/cmTC_df718.dir/build.make CMakeFiles/cmTC_df718.dir/build
+        gmake[1]: Entering directory '/mnt/c/Users/be500/Documents/GitHub/qt-weather-dashboard/build/Desktop-Debug/CMakeFiles/CMakeScratch/TryCompile-zd35YD'
+        Building CXX object CMakeFiles/cmTC_df718.dir/src.cxx.o
+        /usr/bin/clang++-18 -DHAVE_STDATOMIC  -DQT_QML_DEBUG  -std=gnu++17 -fcolor-diagnostics -MD -MT CMakeFiles/cmTC_df718.dir/src.cxx.o -MF CMakeFiles/cmTC_df718.dir/src.cxx.o.d -o CMakeFiles/cmTC_df718.dir/src.cxx.o -c /mnt/c/Users/be500/Documents/GitHub/qt-weather-dashboard/build/Desktop-Debug/CMakeFiles/CMakeScratch/TryCompile-zd35YD/src.cxx
+        Linking CXX executable cmTC_df718
+        /usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_df718.dir/link.txt --verbose=1
+        /usr/bin/clang++-18 -DQT_QML_DEBUG  CMakeFiles/cmTC_df718.dir/src.cxx.o -o cmTC_df718 
+        gmake[1]: Leaving directory '/mnt/c/Users/be500/Documents/GitHub/qt-weather-dashboard/build/Desktop-Debug/CMakeFiles/CMakeScratch/TryCompile-zd35YD'
         
       exitCode: 0
 ...

@@ -71,13 +71,13 @@
 			{
 				"command" : 4,
 				"file" : 1,
-				"line" : 62,
+				"line" : 65,
 				"parent" : 0
 			},
 			{
 				"command" : 5,
 				"file" : 1,
-				"line" : 45,
+				"line" : 48,
 				"parent" : 0
 			},
 			{
@@ -284,7 +284,10 @@
 			[
 				0,
 				1,
-				2
+				2,
+				6,
+				8,
+				10
 			]
 		}
 	],
@@ -368,7 +371,10 @@
 			[
 				0,
 				1,
-				2
+				2,
+				6,
+				8,
+				10
 			]
 		},
 		{
@@ -376,7 +382,10 @@
 			"sourceIndexes" : 
 			[
 				3,
-				5
+				5,
+				7,
+				9,
+				11
 			]
 		},
 		{
@@ -384,14 +393,14 @@
 			"sourceIndexes" : 
 			[
 				4,
-				6
+				12
 			]
 		},
 		{
 			"name" : "CMake Rules",
 			"sourceIndexes" : 
 			[
-				7
+				13
 			]
 		}
 	],
@@ -425,6 +434,39 @@
 			"backtrace" : 4,
 			"path" : "mainwindow.ui",
 			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 4,
+			"path" : "weatherdata.h",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 4,
+			"compileGroupIndex" : 0,
+			"path" : "weatherdata.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 4,
+			"path" : "weatherservice.h",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 4,
+			"compileGroupIndex" : 0,
+			"path" : "weatherservice.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 4,
+			"path" : "locationmanager.h",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 4,
+			"compileGroupIndex" : 0,
+			"path" : "locationmanager.cpp",
+			"sourceGroupIndex" : 0
 		},
 		{
 			"backtrace" : 0,
