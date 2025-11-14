@@ -18,7 +18,7 @@ public:
     QStringList getFavorites() const;
     int count() const { return m_favorites.count(); }
 
-    // Persistência
+    // Persistencia
     void saveFavorites();
     void loadFavorites();
 

@@ -84,7 +84,7 @@ WeatherData WeatherService::parseWeatherData(const QByteArray &jsonData)
     QJsonDocument doc = QJsonDocument::fromJson(jsonData);
     QJsonObject json = doc.object();
 
-    // Nome da cidade e país
+    // Nome da cidade e pais
     data.setCityName(json["name"].toString());
 
     if (json.contains("sys") && json["sys"].isObject()) {
@@ -92,7 +92,7 @@ WeatherData WeatherService::parseWeatherData(const QByteArray &jsonData)
         data.setCountry(sys["country"].toString());
     }
 
-    // Dados principais (temperatura, umidade, sensação térmica)
+    // Dados principais (temperatura, umidade, sensacao termica)
     if (json.contains("main") && json["main"].isObject()) {
         QJsonObject main = json["main"].toObject();
         data.setTemperature(main["temp"].toDouble());
@@ -106,7 +106,7 @@ WeatherData WeatherService::parseWeatherData(const QByteArray &jsonData)
         data.setWindSpeed(wind["speed"].toDouble());
     }
 
-    // Condições climáticas (weather array)
+    // Condicoes climaticas (weather array)
     if (json.contains("weather") && json["weather"].isArray()) {
         QJsonArray weatherArray = json["weather"].toArray();
         if (!weatherArray.isEmpty()) {

@@ -28,7 +28,7 @@ public:
     void setWindSpeed(double speed) { m_windSpeed = speed; }
     void setIconCode(const QString &code) { m_iconCode = code; }
 
-    // Validação
+    // Validacao
     bool isValid() const { return !m_cityName.isEmpty(); }
 
 private:
