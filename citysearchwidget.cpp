@@ -11,7 +11,7 @@ CitySearchWidget::CitySearchWidget(QWidget *parent)
     , m_suggestionsList(new QListWidget(this))
     , m_networkManager(new QNetworkAccessManager(this))
     , m_searchTimer(new QTimer(this))
-    , m_ignoreTextChange(false)  // INICIALIZAR
+    , m_ignoreTextChange(false)
 {
     // Setup layout
     QVBoxLayout *layout = new QVBoxLayout(this);
@@ -27,7 +27,7 @@ CitySearchWidget::CitySearchWidget(QWidget *parent)
     m_suggestionsList->hide();
     layout->addWidget(m_suggestionsList);
 
-    // Setup timer (300ms debounce)
+    // Setup timer
     m_searchTimer->setSingleShot(true);
     m_searchTimer->setInterval(300);
 
@@ -49,23 +49,22 @@ QString CitySearchWidget::text() const
 
 void CitySearchWidget::setText(const QString &text)
 {
-    m_ignoreTextChange = true;  // ATIVAR FLAG
+    m_ignoreTextChange = true;
     m_lineEdit->setText(text);
-    m_ignoreTextChange = false;  // DESATIVAR FLAG
+    m_ignoreTextChange = false;
 }
 
 void CitySearchWidget::clear()
 {
-    m_ignoreTextChange = true;  // ATIVAR FLAG
+    m_ignoreTextChange = true;
     m_lineEdit->clear();
-    m_ignoreTextChange = false;  // DESATIVAR FLAG
+    m_ignoreTextChange = false;
     hideSuggestions();
     m_selectedCity = CityResult();
 }
 
 void CitySearchWidget::onTextChanged(const QString &text)
 {
-    // IGNORAR se estamos setando o texto programaticamente
     if (m_ignoreTextChange) {
         return;
     }
@@ -153,8 +152,6 @@ void CitySearchWidget::onSuggestionClicked(QListWidgetItem *item)
         const CityResult &result = m_results[index];
         m_selectedCity = result;
 
-        // IMPORTANTE: Usar setText() ao invés de m_lineEdit->setText()
-        // para ativar a flag e ignorar o textChanged
         setText(result.displayName());
 
         hideSuggestions();

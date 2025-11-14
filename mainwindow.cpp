@@ -357,7 +357,6 @@ void MainWindow::loadFirstFavorite()
     // Extrair nome da cidade (antes da primeira vírgula) para busca na API
     QString cityName = firstFavorite.split(",").first().trimmed();
 
-    // MUDANÇA: Mostrar nome COMPLETO no campo de busca
     m_citySearchWidget->setText(firstFavorite);
     m_currentCity = cityName;
 
