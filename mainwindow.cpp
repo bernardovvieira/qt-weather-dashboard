@@ -59,6 +59,8 @@ MainWindow::MainWindow(QWidget *parent)
     // Connect location manager
     connect(m_locationManager, &LocationManager::favoritesChanged,
             this, &MainWindow::onFavoritesChanged);
+    connect(ui->favoritesListWidget->model(), &QAbstractItemModel::rowsMoved,
+            this, &MainWindow::onFavoritesReordered);
 
     // Connect icon download manager
     connect(m_iconManager, &QNetworkAccessManager::finished,
@@ -507,4 +509,18 @@ void MainWindow::onLoadFirstFavoriteClicked()
 
     // Chamar método existente
     loadFirstFavorite();
+}
+
+void MainWindow::onFavoritesReordered()
+{
+    // Pegar nova ordem da lista
+    QStringList newOrder;
+    for (int i = 0; i < ui->favoritesListWidget->count(); ++i) {
+        newOrder.append(ui->favoritesListWidget->item(i)->text());
+    }
+
+    // Salvar nova ordem
+    m_locationManager->reorderLocations(newOrder);
+
+    setStatusMessage("Favorites reordered");
 }

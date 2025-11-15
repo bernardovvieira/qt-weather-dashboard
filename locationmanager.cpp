@@ -50,6 +50,13 @@ void LocationManager::removeLocation(const QString &city)
     qWarning() << "City not found in favorites:" << normalizedCity;
 }
 
+void LocationManager::reorderLocations(const QStringList &newOrder)
+{
+    m_favorites = newOrder;
+    saveFavorites();
+    emit favoritesChanged();
+}
+
 bool LocationManager::isFavorite(const QString &city) const
 {
     return m_favorites.contains(city.trimmed(), Qt::CaseInsensitive);

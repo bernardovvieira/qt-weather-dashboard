@@ -17,6 +17,7 @@ public:
     bool isFavorite(const QString &city) const;
     QStringList getFavorites() const;
     int count() const { return m_favorites.count(); }
+    void reorderLocations(const QStringList &newOrder);
 
     // Persistencia
     void saveFavorites();

@@ -38,6 +38,7 @@ private slots:
     void onClearClicked();
     void onAboutClicked();
     void onLoadFirstFavoriteClicked();
+    void onFavoritesReordered();
 
 private:
     Ui::MainWindow *ui;
