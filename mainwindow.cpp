@@ -49,6 +49,12 @@ MainWindow::MainWindow(QWidget *parent)
             this, &MainWindow::onRemoveFavoriteClicked);
     connect(ui->clearPushButton, &QPushButton::clicked,
             this, &MainWindow::onClearClicked);
+    connect(ui->actionHelpAbout, &QAction::triggered,
+            this, &MainWindow::onAboutClicked);
+    connect(ui->actionClear_Search, &QAction::triggered,
+            this, &MainWindow::onClearClicked);
+    connect(ui->actionLoad_First_Favorite, &QAction::triggered,
+            this, &MainWindow::onLoadFirstFavoriteClicked);
 
     // Connect location manager
     connect(m_locationManager, &LocationManager::favoritesChanged,
@@ -459,4 +465,46 @@ void MainWindow::updateFavoritesList()
 void MainWindow::setStatusMessage(const QString &message)
 {
     statusBar()->showMessage(message);
+}
+
+void MainWindow::onAboutClicked()
+{
+    QMessageBox::about(this, "About Weather Dashboard",
+                       "<h2>Weather Dashboard</h2>"
+                       "<p><b>Version:</b> 1.0</p>"
+                       "<p>A modern weather application built with <b>C++ and Qt 6</b>.</p>"
+                       "<hr>"
+                       "<h3>Features:</h3>"
+                       "<ul>"
+                       "<li>Real-time weather data</li>"
+                       "<li>5-day weather forecast</li>"
+                       "<li>Smart city search with autocomplete</li>"
+                       "<li>Favorites management</li>"
+                       "<li>Clean and intuitive interface</li>"
+                       "</ul>"
+                       "<hr>"
+                       "<h3>Author:</h3>"
+                       "<p><b>Bernardo Vivian Vieira</b><br>"
+                       "<a href='mailto:179835@upf.br'>179835@upf.br</a><br>"
+                       "Ciência da Computação - Universidade de Passo Fundo (UPF)<br>"
+                       "2025/2</p>"
+                       "<hr>"
+                       "<p><i>Powered by <a href='https://openweathermap.org'>OpenWeatherMap API</a></i></p>"
+                       );
+}
+
+void MainWindow::onLoadFirstFavoriteClicked()
+{
+    QStringList favorites = m_locationManager->getFavorites();
+
+    if (favorites.isEmpty()) {
+        QMessageBox::information(this, "No Favorites",
+                                 "You don't have any favorite cities yet.\n"
+                                 "Search for a city and add it to favorites first.");
+        setStatusMessage("No favorites available");
+        return;
+    }
+
+    // Chamar método existente
+    loadFirstFavorite();
 }

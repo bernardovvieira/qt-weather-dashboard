@@ -36,6 +36,8 @@ private slots:
     void onFavoritesChanged();
     void onIconDownloaded(QNetworkReply *reply);
     void onClearClicked();
+    void onAboutClicked();
+    void onLoadFirstFavoriteClicked();
 
 private:
     Ui::MainWindow *ui;
