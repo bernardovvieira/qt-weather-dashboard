@@ -165,9 +165,10 @@ void MainWindow::updateWeatherDisplay(const WeatherData &data)
     ui->humidityLabel->setText(QString("%1%")
                                    .arg(data.humidity()));
 
-    // Wind speed
-    ui->windLabel->setText(QString("%1 m/s")
-                               .arg(data.windSpeed(), 0, 'f', 1));
+    // Wind speed convertido para km/h
+    double windKmh = data.windSpeed() * 3.6;
+    ui->windLabel->setText(QString("%1 km/h")
+                               .arg(windKmh, 0, 'f', 1));
 }
 
 void MainWindow::updateForecastDisplay(const ForecastData &data)
