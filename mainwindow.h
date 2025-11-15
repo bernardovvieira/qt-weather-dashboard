@@ -46,12 +46,14 @@ private:
     WeatherData m_currentWeather;
     QString m_currentCity;
     QString m_currentCityFull;
+    QMap<QString, QPixmap> m_forecastIcons;
 
     void updateWeatherDisplay(const WeatherData &data);
     void updateForecastDisplay(const ForecastData &data);
     void updateFavoritesList();
     void setStatusMessage(const QString &message);
     void downloadWeatherIcon(const QString &iconCode);
+    void downloadForecastIcon(const QString &iconCode, int row);
     void clearResults();
     void loadFirstFavorite();  // ADICIONAR
 };

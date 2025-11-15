@@ -564,15 +564,8 @@ font: bold;</string>
              <bold>true</bold>
             </font>
            </property>
-          </row>
-          <row>
-           <property name="text">
-            <string/>
-           </property>
-           <property name="font">
-            <font>
-             <bold>true</bold>
-            </font>
+           <property name="textAlignment">
+            <set>AlignCenter</set>
            </property>
           </row>
           <row>
@@ -584,6 +577,9 @@ font: bold;</string>
              <bold>true</bold>
             </font>
            </property>
+           <property name="textAlignment">
+            <set>AlignCenter</set>
+           </property>
           </row>
           <row>
            <property name="text">
@@ -593,6 +589,22 @@ font: bold;</string>
             <font>
              <bold>true</bold>
             </font>
+           </property>
+           <property name="textAlignment">
+            <set>AlignCenter</set>
+           </property>
+          </row>
+          <row>
+           <property name="text">
+            <string/>
+           </property>
+           <property name="font">
+            <font>
+             <bold>true</bold>
+            </font>
+           </property>
+           <property name="textAlignment">
+            <set>AlignCenter</set>
            </property>
           </row>
           <column>
@@ -635,6 +647,87 @@ font: bold;</string>
             </font>
            </property>
           </column>
+          <item row="0" column="0">
+           <property name="textAlignment">
+            <set>AlignCenter</set>
+           </property>
+          </item>
+          <item row="0" column="1">
+           <property name="text">
+            <string/>
+           </property>
+           <property name="textAlignment">
+            <set>AlignCenter</set>
+           </property>
+          </item>
+          <item row="0" column="2">
+           <property name="textAlignment">
+            <set>AlignCenter</set>
+           </property>
+          </item>
+          <item row="1" column="0">
+           <property name="textAlignment">
+            <set>AlignCenter</set>
+           </property>
+          </item>
+          <item row="1" column="1">
+           <property name="textAlignment">
+            <set>AlignCenter</set>
+           </property>
+          </item>
+          <item row="1" column="2">
+           <property name="textAlignment">
+            <set>AlignCenter</set>
+           </property>
+          </item>
+          <item row="2" column="0">
+           <property name="textAlignment">
+            <set>AlignCenter</set>
+           </property>
+          </item>
+          <item row="2" column="1">
+           <property name="textAlignment">
+            <set>AlignCenter</set>
+           </property>
+          </item>
+          <item row="2" column="2">
+           <property name="text">
+            <string/>
+           </property>
+           <property name="textAlignment">
+            <set>AlignCenter</set>
+           </property>
+          </item>
+          <item row="3" column="0">
+           <property name="textAlignment">
+            <set>AlignCenter</set>
+           </property>
+          </item>
+          <item row="3" column="1">
+           <property name="textAlignment">
+            <set>AlignCenter</set>
+           </property>
+          </item>
+          <item row="3" column="2">
+           <property name="textAlignment">
+            <set>AlignCenter</set>
+           </property>
+          </item>
+          <item row="4" column="0">
+           <property name="textAlignment">
+            <set>AlignCenter</set>
+           </property>
+          </item>
+          <item row="4" column="1">
+           <property name="textAlignment">
+            <set>AlignCenter</set>
+           </property>
+          </item>
+          <item row="4" column="2">
+           <property name="textAlignment">
+            <set>AlignCenter</set>
+           </property>
+          </item>
          </widget>
         </item>
         <item>

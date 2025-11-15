@@ -64,6 +64,10 @@ MainWindow::MainWindow(QWidget *parent)
     ui->forecastTableWidget->setSelectionBehavior(QAbstractItemView::SelectRows);
     ui->forecastTableWidget->setSelectionMode(QAbstractItemView::SingleSelection);
 
+    // Configurar tamanho dos ícones
+    ui->forecastTableWidget->setIconSize(QSize(64, 64));
+    ui->forecastTableWidget->horizontalHeader()->setSectionResizeMode(1, QHeaderView::ResizeToContents);
+
     // Load favorites list
     updateFavoritesList();
 
@@ -83,6 +87,7 @@ void MainWindow::onCitySelected(const QString &cityName, double lat, double lon)
 
     m_currentCity = cityName;
 
+    // Salvar nome completo da cidade selecionada
     CityResult selectedCity = m_citySearchWidget->selectedCity();
     m_currentCityFull = selectedCity.fullName();
 
@@ -121,13 +126,14 @@ void MainWindow::onWeatherError(const QString &error)
 
 void MainWindow::updateWeatherDisplay(const WeatherData &data)
 {
+    // Usar nome completo se disponível, senão usar da API
     QString displayName;
     if (!m_currentCityFull.isEmpty()) {
-        displayName = m_currentCityFull;  // "Passo Fundo, Rio Grande do Sul, BR"
+        displayName = m_currentCityFull;
     } else {
         displayName = QString("%1, %2")
                           .arg(data.cityName())
-                          .arg(data.country());  // Fallback: "Passo Fundo, BR"
+                          .arg(data.country());
     }
 
     ui->cityLabel->setText(displayName);
@@ -174,11 +180,14 @@ void MainWindow::updateForecastDisplay(const ForecastData &data)
         dateItem->setTextAlignment(Qt::AlignCenter);
         ui->forecastTableWidget->setItem(row, 0, dateItem);
 
-        // Icon placeholder
-        QTableWidgetItem *iconItem = new QTableWidgetItem("☁️");
+        // Icon - Baixar ícone real
+        QTableWidgetItem *iconItem = new QTableWidgetItem();
         iconItem->setTextAlignment(Qt::AlignCenter);
         iconItem->setData(Qt::UserRole, item.iconCode());
         ui->forecastTableWidget->setItem(row, 1, iconItem);
+
+        // Baixar ícone
+        downloadForecastIcon(item.iconCode(), row);
 
         // Temperature range
         QString tempStr = QString("%1° / %2°")
@@ -218,6 +227,30 @@ void MainWindow::downloadWeatherIcon(const QString &iconCode)
     m_iconManager->get(request);
 }
 
+void MainWindow::downloadForecastIcon(const QString &iconCode, int row)
+{
+    if (iconCode.isEmpty()) {
+        return;
+    }
+
+    // Verificar se já baixamos este ícone
+    if (m_forecastIcons.contains(iconCode)) {
+        // Já temos o ícone, usar direto
+        QTableWidgetItem *item = ui->forecastTableWidget->item(row, 1);
+        if (item) {
+            item->setIcon(QIcon(m_forecastIcons[iconCode]));
+        }
+        return;
+    }
+
+    QString iconUrl = QString("https://openweathermap.org/img/wn/%1@2x.png").arg(iconCode);
+
+    QNetworkRequest request(iconUrl);
+    request.setAttribute(QNetworkRequest::User, QString("forecast_%1").arg(row));
+    request.setAttribute(QNetworkRequest::UserMax, iconCode);
+    m_iconManager->get(request);
+}
+
 void MainWindow::onIconDownloaded(QNetworkReply *reply)
 {
     if (!reply) {
@@ -232,13 +265,33 @@ void MainWindow::onIconDownloaded(QNetworkReply *reply)
             QString requestType = reply->request().attribute(QNetworkRequest::User).toString();
 
             if (requestType == "current") {
-                // Escalar para 64x64 mantendo proporção
+                // Ícone do clima atual
                 QPixmap scaledPixmap = pixmap.scaled(64, 64,
                                                      Qt::KeepAspectRatio,
                                                      Qt::SmoothTransformation);
 
                 ui->weatherIconLabel->setPixmap(scaledPixmap);
                 ui->weatherIconLabel->setScaledContents(false);
+            }
+            else if (requestType.startsWith("forecast_")) {
+                // Ícone do forecast
+                int row = requestType.split("_")[1].toInt();
+                QString iconCode = reply->request().attribute(QNetworkRequest::UserMax).toString();
+
+                // Escalar
+                QPixmap scaledPixmap = pixmap.scaled(64, 64,
+                                                     Qt::KeepAspectRatio,
+                                                     Qt::SmoothTransformation);
+
+                // Guardar no cache
+                m_forecastIcons[iconCode] = scaledPixmap;
+
+                // Atualizar tabela
+                QTableWidgetItem *item = ui->forecastTableWidget->item(row, 1);
+                if (item) {
+                    item->setIcon(QIcon(scaledPixmap));
+                    item->setText("");
+                }
             }
         }
     }
@@ -254,10 +307,10 @@ void MainWindow::onAddFavoritesClicked()
         return;
     }
 
-    // Usar m_currentCityFull
+    // Usar m_currentCityFull primeiro
     QString fullCityName = m_currentCityFull;
 
-    // Fallback 1: Tentar pegar do CitySearchWidget (se foi seleção manual)
+    // Fallback 1: Tentar pegar do CitySearchWidget
     if (fullCityName.isEmpty()) {
         CityResult selectedCity = m_citySearchWidget->selectedCity();
         fullCityName = selectedCity.fullName();
@@ -268,7 +321,6 @@ void MainWindow::onAddFavoritesClicked()
         fullCityName = m_currentWeather.cityName() + ", " + m_currentWeather.country();
     }
 
-    // Verificar se já está nos favoritos
     if (m_locationManager->isFavorite(fullCityName)) {
         QMessageBox::information(this, "Already Favorite",
                                  "This city is already in your favorites");
@@ -294,8 +346,10 @@ void MainWindow::onLoadFavoriteClicked()
     // Extrair apenas o nome da cidade para a API
     QString cityName = fullCity.split(",").first().trimmed();
 
-    m_citySearchWidget->setText(fullCity);  // Mostra tudo
+    // Mostrar nome COMPLETO no campo de busca
+    m_citySearchWidget->setText(fullCity);
     m_currentCity = cityName;
+    m_currentCityFull = fullCity;
 
     setStatusMessage("Searching weather for " + cityName + "...");
     m_weatherService->fetchWeather(cityName);
@@ -325,24 +379,6 @@ void MainWindow::onRemoveFavoriteClicked()
     }
 }
 
-void MainWindow::clearResults()
-{
-    // Limpar clima atual
-    ui->cityLabel->setText("--");
-    ui->temperatureLabel->setText("--°C");
-    ui->descriptionLabel->setText("--");
-    ui->feelsLikeLabel->setText("--");
-    ui->humidityLabel->setText("--");
-    ui->windLabel->setText("--");
-    ui->weatherIconLabel->clear();
-
-    // Limpar tabela de previsao
-    ui->forecastTableWidget->setRowCount(0);
-
-    // Desabilitar botao de adicionar favoritos
-    ui->addFavoritesPushButton->setEnabled(false);
-}
-
 void MainWindow::onClearClicked()
 {
     // Limpar o campo de busca
@@ -359,6 +395,27 @@ void MainWindow::onClearClicked()
     setStatusMessage("Search cleared. Enter a city name to search.");
 }
 
+void MainWindow::clearResults()
+{
+    // Limpar clima atual
+    ui->cityLabel->setText("--");
+    ui->temperatureLabel->setText("--°C");
+    ui->descriptionLabel->setText("--");
+    ui->feelsLikeLabel->setText("--");
+    ui->humidityLabel->setText("--");
+    ui->windLabel->setText("--");
+    ui->weatherIconLabel->clear();
+
+    // Limpar tabela de previsao
+    ui->forecastTableWidget->setRowCount(0);
+
+    // Limpar cache de ícones do forecast
+    m_forecastIcons.clear();
+
+    // Desabilitar botao de adicionar favoritos
+    ui->addFavoritesPushButton->setEnabled(false);
+}
+
 void MainWindow::loadFirstFavorite()
 {
     QStringList favorites = m_locationManager->getFavorites();
@@ -368,7 +425,7 @@ void MainWindow::loadFirstFavorite()
         return;
     }
 
-    // Pegar primeira cidade da lista
+    // Pegar primeira cidade da lista (nome completo)
     QString firstFavorite = favorites.first();
 
     // Extrair nome da cidade para busca na API
