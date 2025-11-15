@@ -58,7 +58,7 @@ private:
     void downloadWeatherIcon(const QString &iconCode);
     void downloadForecastIcon(const QString &iconCode, int row);
     void clearResults();
-    void loadFirstFavorite();  // ADICIONAR
+    void loadFirstFavorite();
 };
 
 #endif // MAINWINDOW_H
