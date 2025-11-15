@@ -119,7 +119,7 @@ font: bold;</string>
          <x>10</x>
          <y>24</y>
          <width>661</width>
-         <height>151</height>
+         <height>152</height>
         </rect>
        </property>
        <layout class="QVBoxLayout" name="verticalLayout_2">
@@ -171,7 +171,7 @@ font: bold;</string>
                </font>
               </property>
               <property name="text">
-               <string>--</string>
+               <string/>
               </property>
               <property name="scaledContents">
                <bool>true</bool>
@@ -363,8 +363,7 @@ font: bold;</string>
           <item>
            <widget class="QLabel" name="humidityLabel">
             <property name="styleSheet">
-             <string notr="true">
-</string>
+             <string notr="true"/>
             </property>
             <property name="text">
              <string>--</string>

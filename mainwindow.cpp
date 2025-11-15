@@ -82,6 +82,10 @@ void MainWindow::onCitySelected(const QString &cityName, double lat, double lon)
     Q_UNUSED(lon);
 
     m_currentCity = cityName;
+
+    CityResult selectedCity = m_citySearchWidget->selectedCity();
+    m_currentCityFull = selectedCity.fullName();
+
     setStatusMessage("Searching weather for " + cityName + "...");
 
     // Fetch both current weather and forecast
@@ -117,10 +121,16 @@ void MainWindow::onWeatherError(const QString &error)
 
 void MainWindow::updateWeatherDisplay(const WeatherData &data)
 {
-    // City name and country
-    ui->cityLabel->setText(QString("%1, %2")
-                               .arg(data.cityName())
-                               .arg(data.country()));
+    QString displayName;
+    if (!m_currentCityFull.isEmpty()) {
+        displayName = m_currentCityFull;  // "Passo Fundo, Rio Grande do Sul, BR"
+    } else {
+        displayName = QString("%1, %2")
+                          .arg(data.cityName())
+                          .arg(data.country());  // Fallback: "Passo Fundo, BR"
+    }
+
+    ui->cityLabel->setText(displayName);
 
     // Temperature
     ui->temperatureLabel->setText(QString("%1°C")
@@ -244,15 +254,21 @@ void MainWindow::onAddFavoritesClicked()
         return;
     }
 
-    // Get full city name from CitySearchWidget (includes state/country)
-    CityResult selectedCity = m_citySearchWidget->selectedCity();
-    QString fullCityName = selectedCity.fullName();
+    // Usar m_currentCityFull
+    QString fullCityName = m_currentCityFull;
 
-    // Fallback if no city was selected via autocomplete
+    // Fallback 1: Tentar pegar do CitySearchWidget (se foi seleção manual)
     if (fullCityName.isEmpty()) {
+        CityResult selectedCity = m_citySearchWidget->selectedCity();
+        fullCityName = selectedCity.fullName();
+    }
+
+    // Fallback 2: Construir a partir dos dados da API
+    if (fullCityName.isEmpty() || fullCityName.trimmed() == ",") {
         fullCityName = m_currentWeather.cityName() + ", " + m_currentWeather.country();
     }
 
+    // Verificar se já está nos favoritos
     if (m_locationManager->isFavorite(fullCityName)) {
         QMessageBox::information(this, "Already Favorite",
                                  "This city is already in your favorites");
@@ -275,10 +291,10 @@ void MainWindow::onLoadFavoriteClicked()
 
     QString fullCity = item->text();
 
-    // Extract just the city name (before first comma)
+    // Extrair apenas o nome da cidade para a API
     QString cityName = fullCity.split(",").first().trimmed();
 
-    m_citySearchWidget->setText(cityName);
+    m_citySearchWidget->setText(fullCity);  // Mostra tudo
     m_currentCity = cityName;
 
     setStatusMessage("Searching weather for " + cityName + "...");
@@ -309,21 +325,6 @@ void MainWindow::onRemoveFavoriteClicked()
     }
 }
 
-void MainWindow::onClearClicked()
-{
-    // Limpar o campo de busca
-    m_citySearchWidget->clear();
-
-    // Limpar todos os resultados
-    clearResults();
-
-    // Reset current city
-    m_currentCity.clear();
-    m_currentWeather = WeatherData();
-
-    setStatusMessage("Search cleared. Enter a city name to search.");
-}
-
 void MainWindow::clearResults()
 {
     // Limpar clima atual
@@ -342,6 +343,22 @@ void MainWindow::clearResults()
     ui->addFavoritesPushButton->setEnabled(false);
 }
 
+void MainWindow::onClearClicked()
+{
+    // Limpar o campo de busca
+    m_citySearchWidget->clear();
+
+    // Limpar todos os resultados
+    clearResults();
+
+    // Reset current city
+    m_currentCity.clear();
+    m_currentCityFull.clear();
+    m_currentWeather = WeatherData();
+
+    setStatusMessage("Search cleared. Enter a city name to search.");
+}
+
 void MainWindow::loadFirstFavorite()
 {
     QStringList favorites = m_locationManager->getFavorites();
@@ -351,12 +368,16 @@ void MainWindow::loadFirstFavorite()
         return;
     }
 
-    // Pegar primeira cidade da lista (nome completo)
+    // Pegar primeira cidade da lista
     QString firstFavorite = favorites.first();
 
-    // Extrair nome da cidade (antes da primeira vírgula) para busca na API
+    // Extrair nome da cidade para busca na API
     QString cityName = firstFavorite.split(",").first().trimmed();
 
+    // Salvar nome completo
+    m_currentCityFull = firstFavorite;
+
+    // Mostrar nome COMPLETO no campo de busca
     m_citySearchWidget->setText(firstFavorite);
     m_currentCity = cityName;
 

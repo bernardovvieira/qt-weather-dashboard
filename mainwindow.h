@@ -45,6 +45,7 @@ private:
     CitySearchWidget *m_citySearchWidget;
     WeatherData m_currentWeather;
     QString m_currentCity;
+    QString m_currentCityFull;
 
     void updateWeatherDisplay(const WeatherData &data);
     void updateForecastDisplay(const ForecastData &data);
