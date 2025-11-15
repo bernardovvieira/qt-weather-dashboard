@@ -55,6 +55,5 @@ For production use, get your own free key at [openweathermap.org/api](https://op
 
 ## 📧 Contact
 
-**Author:** Bernardo Vivian Vieira 
-
-**Email:** 179835@upf.br
+- **Author:** Bernardo Vivian Vieira 
+- **Email:** 179835@upf.br
