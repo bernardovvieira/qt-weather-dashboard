@@ -57,7 +57,7 @@ private:
     QTimer *m_searchTimer;
     QList<CityResult> m_results;
     CityResult m_selectedCity;
-    bool m_ignoreTextChange;  // ADICIONAR
+    bool m_ignoreTextChange;
 
     void searchCities(const QString &query);
     void hideSuggestions();

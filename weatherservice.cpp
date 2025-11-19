@@ -175,7 +175,7 @@ ForecastData WeatherService::parseForecastData(const QByteArray &jsonData)
 
     QJsonArray list = json["list"].toArray();
 
-    // Process daily data (one per day around noon)
+    // Process daily data
     QSet<QString> processedDates;
 
     for (const QJsonValue &value : list) {
@@ -188,7 +188,7 @@ ForecastData WeatherService::parseForecastData(const QByteArray &jsonData)
         QDateTime dateTime = QDateTime::fromSecsSinceEpoch(timestamp);
         QString dateKey = dateTime.date().toString("yyyy-MM-dd");
 
-        // Only take one forecast per day (around noon)
+        // Only take one forecast per day
         if (processedDates.contains(dateKey)) {
             continue;
         }
@@ -203,14 +203,14 @@ ForecastData WeatherService::parseForecastData(const QByteArray &jsonData)
         ForecastItem forecastItem;
         forecastItem.setDateTime(dateTime);
 
-        // Temperature (min/max approximation)
+        // Temperature
         if (item.contains("main") && item["main"].isObject()) {
             QJsonObject main = item["main"].toObject();
             double temp = main["temp"].toDouble();
             double tempMin = main["temp_min"].toDouble();
             double tempMax = main["temp_max"].toDouble();
 
-            // Use actual min/max if available, otherwise approximate
+            // Use actual min/max (if available); otherwise approximate
             if (tempMin > 0 && tempMax > 0) {
                 forecastItem.setTempMin(tempMin);
                 forecastItem.setTempMax(tempMax);

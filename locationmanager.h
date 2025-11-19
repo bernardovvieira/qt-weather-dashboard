@@ -11,7 +11,6 @@ class LocationManager : public QObject
 public:
     explicit LocationManager(QObject *parent = nullptr);
 
-    // Gerenciamento de favoritos
     void addLocation(const QString &city);
     void removeLocation(const QString &city);
     bool isFavorite(const QString &city) const;
@@ -19,7 +18,6 @@ public:
     int count() const { return m_favorites.count(); }
     void reorderLocations(const QStringList &newOrder);
 
-    // Persistencia
     void saveFavorites();
     void loadFavorites();
 
