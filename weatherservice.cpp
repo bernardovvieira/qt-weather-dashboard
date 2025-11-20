@@ -194,7 +194,7 @@ ForecastData WeatherService::parseForecastData(const QByteArray &jsonData)
         }
 
         int hour = dateTime.time().hour();
-        if (hour < 11 || hour > 14) {
+        if ((hour < 11) || (hour > 14)) {
             continue;
         }
 
