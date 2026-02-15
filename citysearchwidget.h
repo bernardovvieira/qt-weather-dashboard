@@ -61,8 +61,8 @@ private:
 
     void searchCities(const QString &query);
     void hideSuggestions();
+    QString apiKey() const;
 
-    const QString API_KEY = "9df9796620be86e3680b4b40f7cf3098";
     const QString GEO_URL = "https://api.openweathermap.org/geo/1.0/direct";
 };
 

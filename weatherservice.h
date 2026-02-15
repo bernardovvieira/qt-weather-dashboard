@@ -29,7 +29,7 @@ private:
     WeatherData parseWeatherData(const QByteArray &jsonData);
     ForecastData parseForecastData(const QByteArray &jsonData);
 
-    const QString API_KEY = "9df9796620be86e3680b4b40f7cf3098";
+    QString apiKey() const;
     const QString WEATHER_URL = "https://api.openweathermap.org/data/2.5/weather";
     const QString FORECAST_URL = "https://api.openweathermap.org/data/2.5/forecast";
 };

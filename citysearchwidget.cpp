@@ -5,6 +5,11 @@
 #include <QJsonObject>
 #include <QUrlQuery>
 
+QString CitySearchWidget::apiKey() const
+{
+    return QString::fromUtf8(qgetenv("OPENWEATHERMAP_API_KEY").constData());
+}
+
 CitySearchWidget::CitySearchWidget(QWidget *parent)
     : QWidget(parent)
     , m_lineEdit(new QLineEdit(this))
@@ -89,11 +94,16 @@ void CitySearchWidget::onSearchTimeout()
 
 void CitySearchWidget::searchCities(const QString &query)
 {
+    QString key = apiKey();
+    if (key.isEmpty()) {
+        hideSuggestions();
+        return;
+    }
     QUrl url(GEO_URL);
     QUrlQuery urlQuery;
     urlQuery.addQueryItem("q", query);
     urlQuery.addQueryItem("limit", "5");
-    urlQuery.addQueryItem("appid", API_KEY);
+    urlQuery.addQueryItem("appid", key);
     url.setQuery(urlQuery);
 
     QNetworkRequest request(url);

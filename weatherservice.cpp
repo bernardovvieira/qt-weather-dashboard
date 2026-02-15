@@ -6,6 +6,12 @@
 #include <QJsonArray>
 #include <QDateTime>
 #include <QDebug>
+#include <QByteArray>
+
+QString WeatherService::apiKey() const
+{
+    return QString::fromUtf8(qgetenv("OPENWEATHERMAP_API_KEY").constData());
+}
 
 WeatherService::WeatherService(QObject *parent)
     : QObject(parent)
@@ -21,11 +27,16 @@ void WeatherService::fetchWeather(const QString &city)
         emit errorOccurred("City name cannot be empty");
         return;
     }
+    QString key = apiKey();
+    if (key.isEmpty()) {
+        emit errorOccurred("OPENWEATHERMAP_API_KEY environment variable is not set. See README.");
+        return;
+    }
 
     QUrl url(WEATHER_URL);
     QUrlQuery query;
     query.addQueryItem("q", city);
-    query.addQueryItem("appid", API_KEY);
+    query.addQueryItem("appid", key);
     query.addQueryItem("units", "metric");
     query.addQueryItem("lang", "en");
     url.setQuery(query);
@@ -41,11 +52,16 @@ void WeatherService::fetchForecast(const QString &city)
         emit errorOccurred("City name cannot be empty");
         return;
     }
+    QString key = apiKey();
+    if (key.isEmpty()) {
+        emit errorOccurred("OPENWEATHERMAP_API_KEY environment variable is not set. See README.");
+        return;
+    }
 
     QUrl url(FORECAST_URL);
     QUrlQuery query;
     query.addQueryItem("q", city);
-    query.addQueryItem("appid", API_KEY);
+    query.addQueryItem("appid", key);
     query.addQueryItem("units", "metric");
     query.addQueryItem("lang", "en");
     url.setQuery(query);
